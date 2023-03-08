@@ -1,0 +1,202 @@
+[INFO] [2023-03-08 01:55:40,636] [202303080155356140690] [960047:140419357169472] - [base_worker.run] [line:98]: enter TaskExecutor worker in subprocess, pid: 960047
+[INFO] [2023-03-08 01:55:40,636] [202303080155356140690] [960047:140419357169472] - [base_worker.run] [line:101]: log level: INFO
+[INFO] [2023-03-08 01:55:40,636] [202303080155356140690] [960047:140419357169472] - [base_worker.run] [line:103]: PYTHONPATH: /data/projects/spark-3.1.3-bin-hadoop3.2//python/lib/pyspark.zip:/data/projects/spark-3.1.3-bin-hadoop3.2//python/lib/py4j-0.10.9-src.zip:/data/projects/spark-3.1.3-bin-hadoop3.2/jars/spark-core_2.12-3.1.3.jar:/data/projects/fate/fateflow/python:$PYTHONPATH:/data/projects/fate/fate/python:/data/projects/fate/eggroll/python:/data/projects/fate/fateflow/python:/data/projects/fate/fate/python/fate_client
+[INFO] [2023-03-08 01:55:40,637] [202303080155356140690] [960047:140419357169472] - [base_worker.run] [line:103]: SPARK_HOME: /data/projects/spark-3.1.3-bin-hadoop3.2/
+[INFO] [2023-03-08 01:55:40,637] [202303080155356140690] [960047:140419357169472] - [base_worker.run] [line:103]: VIRTUAL_ENV: /data/projects/python/venv
+[INFO] [2023-03-08 01:55:40,637] [202303080155356140690] [960047:140419357169472] - [base_worker.run] [line:103]: FATE_JOB_ID: 202303080155356140690
+[INFO] [2023-03-08 01:55:40,637] [202303080155356140690] [960047:140419357169472] - [base_worker.run] [line:103]: PROCESS_ROLE: worker
+[INFO] [2023-03-08 01:55:40,637] [202303080155356140690] [960047:140419357169472] - [base_worker.run] [line:103]: FATE_DEPLOY_BASE: None
+[WARNING] [2023-03-08 01:55:40,652] [202303080155356140690] [960047:140419357169472] - [job_default_config.load] [line:61]: job default config not supported upload_max_bytes
+[INFO] [2023-03-08 01:55:40,938] [202303080155356140690] [960047:140419357169472] - [resource_manager.register_engine] [line:64]: update federation engine STANDALONE fate_on_standalone registration information
+[INFO] [2023-03-08 01:55:40,944] [202303080155356140690] [960047:140419357169472] - [resource_manager.register_engine] [line:64]: update federation engine EGGROLL fate_on_eggroll registration information
+[INFO] [2023-03-08 01:55:40,949] [202303080155356140690] [960047:140419357169472] - [resource_manager.register_engine] [line:64]: update federation engine RABBITMQ fate_on_spark registration information
+[INFO] [2023-03-08 01:55:40,954] [202303080155356140690] [960047:140419357169472] - [resource_manager.register_engine] [line:64]: update federation engine PULSAR fate_on_spark registration information
+[INFO] [2023-03-08 01:55:40,959] [202303080155356140690] [960047:140419357169472] - [resource_manager.register_engine] [line:64]: update computing engine STANDALONE fate_on_standalone registration information
+[INFO] [2023-03-08 01:55:40,965] [202303080155356140690] [960047:140419357169472] - [resource_manager.register_engine] [line:64]: update computing engine EGGROLL fate_on_eggroll registration information
+[INFO] [2023-03-08 01:55:40,971] [202303080155356140690] [960047:140419357169472] - [resource_manager.register_engine] [line:64]: update computing engine SPARK fate_on_spark registration information
+[INFO] [2023-03-08 01:55:40,976] [202303080155356140690] [960047:140419357169472] - [resource_manager.register_engine] [line:64]: update computing engine LINKIS_SPARK fate_on_spark registration information
+[INFO] [2023-03-08 01:55:40,981] [202303080155356140690] [960047:140419357169472] - [resource_manager.register_engine] [line:64]: update storage engine STANDALONE fate_on_standalone registration information
+[INFO] [2023-03-08 01:55:40,989] [202303080155356140690] [960047:140419357169472] - [resource_manager.register_engine] [line:64]: update storage engine EGGROLL fate_on_eggroll registration information
+[INFO] [2023-03-08 01:55:40,996] [202303080155356140690] [960047:140419357169472] - [resource_manager.register_engine] [line:64]: update storage engine HDFS fate_on_spark registration information
+[INFO] [2023-03-08 01:55:41,001] [202303080155356140690] [960047:140419357169472] - [resource_manager.register_engine] [line:64]: update storage engine HIVE fate_on_spark registration information
+[INFO] [2023-03-08 01:55:41,006] [202303080155356140690] [960047:140419357169472] - [resource_manager.register_engine] [line:64]: update storage engine LINKIS_HIVE fate_on_spark registration information
+[INFO] [2023-03-08 01:55:41,006] [202303080155356140690] [960047:140419357169472] - [task_executor._run_] [line:56]: run reader_0 202303080155356140690_reader_0 0 on guest 9999 task
+[INFO] [2023-03-08 01:55:41,382] [202303080155356140690] [960047:140419357169472] - [task_executor._run_] [line:82]: user name:
+[INFO] [2023-03-08 01:55:41,382] [202303080155356140690] [960047:140419357169472] - [task_base_worker.report_task_info_to_driver] [line:113]: report TaskExecutor 202303080155356140690_reader_0 0 guest 9999 to driver:
+{'job_id': '202303080155356140690', 'component_name': 'reader_0', 'task_id': '202303080155356140690_reader_0', 'task_version': '0', 'role': 'guest', 'party_id': '9999', 'run_ip': '10.244.0.20', 'run_pid': 960047, 'run_port': '9380', 'party_status': 'running'}
+[INFO] [2023-03-08 01:55:41,382] [202303080155356140690] [960047:140419357169472] - [control_client.report_task] [line:39]: request update job 202303080155356140690 task 202303080155356140690_reader_0 0 on guest 9999
+[INFO] [2023-03-08 01:55:41,414] [202303080155356140690] [960047:140419357169472] - [task_executor._run_] [line:124]: previous_components_parameters:
+{}
+[INFO] [2023-03-08 01:55:41,479] [202303080155356140690] [960047:140419357169472] - [task_executor._run_] [line:131]: component parameters on party:
+{
+    "dsl_version": 2,
+    "initiator": {
+        "role": "guest",
+        "party_id": 9999
+    },
+    "role": {
+        "guest": [
+            9999
+        ],
+        "host": [
+            10000
+        ]
+    },
+    "job_parameters": {
+        "common": {
+            "job_type": "train",
+            "inheritance_info": {},
+            "computing_engine": "SPARK",
+            "engines_address": {},
+            "federated_mode": "MULTIPLE",
+            "task_parallelism": 1,
+            "computing_partitions": 4,
+            "federated_status_collect_type": "PUSH",
+            "model_id": "arbiter-10000#guest-9999#host-10000#model",
+            "model_version": "202303080155356140690",
+            "auto_retries": 5,
+            "auto_retry_delay": 60,
+            "eggroll_run": {},
+            "spark_run": {},
+            "rabbitmq_run": {},
+            "pulsar_run": {},
+            "adaptation_parameters": {
+                "task_nodes": 2,
+                "task_cores_per_node": 2,
+                "task_memory_per_node": 0,
+                "request_task_cores": 4,
+                "if_initiator_baseline": true
+            }
+        }
+    },
+    "local": {
+        "role": "guest",
+        "party_id": 9999
+    },
+    "module": "Reader",
+    "CodePath": "Reader",
+    "ComponentParam": {
+        "table": {
+            "name": "cifar10",
+            "namespace": "experiment"
+        },
+        "_name": "Reader#reader_0"
+    },
+    "ComponentParameterSource": "reader_0"
+}
+[INFO] [2023-03-08 01:55:41,516] [202303080155356140690] [960047:140419357169472] - [_session.__init__] [line:54]: using engines: {'computing': 'SPARK', 'federation': 'PULSAR', 'storage': 'HDFS', 'federated_mode': 'MULTIPLE'}
+[INFO] [2023-03-08 01:55:41,516] [202303080155356140690] [960047:140419357169472] - [_session.__init__] [line:70]: create manager session 202303080155356140690_reader_0_0_guest_9999
+[INFO] [2023-03-08 01:55:41,517] [202303080155356140690] [960047:140419357169472] - [db_models.init_database_tables] [line:85]: start create table SessionRecord
+[INFO] [2023-03-08 01:55:41,519] [202303080155356140690] [960047:140419357169472] - [db_models.init_database_tables] [line:88]: create table success: SessionRecord
+[INFO] [2023-03-08 01:55:41,519] [202303080155356140690] [960047:140419357169472] - [db_models.init_database_tables] [line:85]: start create table StorageConnectorModel
+[INFO] [2023-03-08 01:55:41,520] [202303080155356140690] [960047:140419357169472] - [db_models.init_database_tables] [line:88]: create table success: StorageConnectorModel
+[INFO] [2023-03-08 01:55:41,520] [202303080155356140690] [960047:140419357169472] - [db_models.init_database_tables] [line:85]: start create table StorageTableMetaModel
+[INFO] [2023-03-08 01:55:41,521] [202303080155356140690] [960047:140419357169472] - [db_models.init_database_tables] [line:88]: create table success: StorageTableMetaModel
+[INFO] [2023-03-08 01:55:41,521] [202303080155356140690] [960047:140419357169472] - [_session.save_record] [line:343]: try to save session record for manager 202303080155356140690_reader_0_0_guest_9999, computing SPARK 202303080155356140690_reader_0_0_guest_9999
+[INFO] [2023-03-08 01:55:41,525] [202303080155356140690] [960047:140419357169472] - [_session.save_record] [line:363]: save session record for manager 202303080155356140690_reader_0_0_guest_9999, computing SPARK 202303080155356140690_reader_0_0_guest_9999 successfully
+[INFO] [2023-03-08 01:55:42,138] [202303080155356140690] [960047:140419357169472] - [_session.save_record] [line:343]: try to save session record for manager 202303080155356140690_reader_0_0_guest_9999, federation PULSAR 202303080155356140690_reader_0_0
+[INFO] [2023-03-08 01:55:42,143] [202303080155356140690] [960047:140419357169472] - [_session.save_record] [line:363]: save session record for manager 202303080155356140690_reader_0_0_guest_9999, federation PULSAR 202303080155356140690_reader_0_0 successfully
+[INFO] [2023-03-08 01:55:42,355] [202303080155356140690] [960047:140419357169472] - [task_executor._run_] [line:157]: run reader_0 202303080155356140690_reader_0 0 on guest 9999 task
+[INFO] [2023-03-08 01:55:42,355] [202303080155356140690] [960047:140419357169472] - [task_executor._run_] [line:158]: component parameters on party:
+{
+    "dsl_version": 2,
+    "initiator": {
+        "role": "guest",
+        "party_id": 9999
+    },
+    "role": {
+        "guest": [
+            9999
+        ],
+        "host": [
+            10000
+        ]
+    },
+    "job_parameters": {
+        "job_type": "train",
+        "inheritance_info": {},
+        "computing_engine": "SPARK",
+        "federation_engine": "PULSAR",
+        "storage_engine": "HDFS",
+        "engines_address": {
+            "computing": {
+                "home": "/data/projects/spark-3.1.3-bin-hadoop3.2/",
+                "cores_per_node": 20,
+                "nodes": 2
+            },
+            "federation": {
+                "host": "pulsar",
+                "port": 6650,
+                "mng_port": 8080,
+                "topic_ttl": 3,
+                "cluster": "standalone",
+                "tenant": "fl-tenant",
+                "route_table": "conf/pulsar_route_table/pulsar_route_table.yaml",
+                "mode": "replication",
+                "max_message_size": 1048576
+            },
+            "storage": {
+                "name_node": "hdfs://namenode:9000",
+                "path_prefix": null
+            }
+        },
+        "federated_mode": "MULTIPLE",
+        "task_parallelism": 1,
+        "computing_partitions": 4,
+        "federated_status_collect_type": "PUSH",
+        "model_id": "arbiter-10000#guest-9999#host-10000#model",
+        "model_version": "202303080155356140690",
+        "auto_retries": 5,
+        "auto_retry_delay": 60,
+        "eggroll_run": {},
+        "spark_run": {
+            "num-executors": 2,
+            "executor-cores": 2
+        },
+        "rabbitmq_run": {},
+        "pulsar_run": {},
+        "adaptation_parameters": {
+            "task_nodes": 2,
+            "task_cores_per_node": 2,
+            "task_memory_per_node": 0,
+            "request_task_cores": 4,
+            "if_initiator_baseline": false
+        }
+    },
+    "local": {
+        "role": "guest",
+        "party_id": 9999
+    },
+    "module": "Reader",
+    "CodePath": "Reader",
+    "ComponentParam": {
+        "table": {
+            "name": "cifar10",
+            "namespace": "experiment"
+        },
+        "_name": "Reader#reader_0"
+    },
+    "ComponentParameterSource": "reader_0"
+}
+[INFO] [2023-03-08 01:55:42,356] [202303080155356140690] [960047:140419357169472] - [task_executor._run_] [line:159]: task input dsl {}
+[INFO] [2023-03-08 01:55:42,356] [202303080155356140690] [960047:140419357169472] - [task_executor._run_] [line:208]: profile logging is disabled
+[INFO] [2023-03-08 01:55:42,366] [202303080155356140690] [960047:140419357169472] - [_session.save_record] [line:343]: try to save session record for manager 202303080155356140690_reader_0_0_guest_9999, storage PATH 202303080155356140690_reader_0_0_guest_9999_storage_55425832-bd54-11ed-a2cf-f2da40b0f03a
+[INFO] [2023-03-08 01:55:42,371] [202303080155356140690] [960047:140419357169472] - [_session.save_record] [line:363]: save session record for manager 202303080155356140690_reader_0_0_guest_9999, storage PATH 202303080155356140690_reader_0_0_guest_9999_storage_55425832-bd54-11ed-a2cf-f2da40b0f03a successfully
+[INFO] [2023-03-08 01:55:42,418] [202303080155356140690] [960047:140419357169472] - [reader._run] [line:106]: the PATH input table needs to be transform format
+[INFO] [2023-03-08 01:55:42,418] [202303080155356140690] [960047:140419357169472] - [reader._run] [line:109]: reader create storage session2
+[INFO] [2023-03-08 01:55:42,423] [202303080155356140690] [960047:140419357169472] - [reader.save_table] [line:205]: start copying table
+[INFO] [2023-03-08 01:55:42,423] [202303080155356140690] [960047:140419357169472] - [reader.save_table] [line:206]: source table name: cifar10 namespace: experiment engine: PATH
+[INFO] [2023-03-08 01:55:42,424] [202303080155356140690] [960047:140419357169472] - [reader.save_table] [line:209]: destination table name: 5541a874bd5411eda2cff2da40b0f03a namespace: output_data_202303080155356140690_reader_0_0 engine: PATH
+[INFO] [2023-03-08 01:55:42,426] [202303080155356140690] [960047:140419357169472] - [reader.to_save] [line:239]: dest schema: {}
+[INFO] [2023-03-08 01:55:42,431] [202303080155356140690] [960047:140419357169472] - [reader.to_save] [line:246]: save output_data_202303080155356140690_reader_0_0 5541a874bd5411eda2cff2da40b0f03a success
+[INFO] [2023-03-08 01:55:42,433] [202303080155356140690] [960047:140419357169472] - [tracker_client.log_output_data_info] [line:234]: Request save job 202303080155356140690 task 202303080155356140690_reader_0 0 on guest 9999 data data info
+[INFO] [2023-03-08 01:55:42,547] [202303080155356140690] [960047:140419357169472] - [tracker_client.set_metric_meta_common] [line:103]: Request save job 202303080155356140690 task 202303080155356140690_reader_0 0 on guest 9999 metric reader_namespace reader_name meta
+[INFO] [2023-03-08 01:55:42,558] [202303080155356140690] [960047:140419357169472] - [_session.wait_remote_all_done] [line:494]: remote futures: set(), waiting...
+[INFO] [2023-03-08 01:55:42,558] [202303080155356140690] [960047:140419357169472] - [_session.wait_remote_all_done] [line:496]: remote futures: set(), all done
+[INFO] [2023-03-08 01:55:42,558] [202303080155356140690] [960047:140419357169472] - [task_executor._run_] [line:212]: task output dsl {'data': ['data']}
+[INFO] [2023-03-08 01:55:42,558] [202303080155356140690] [960047:140419357169472] - [task_executor._run_] [line:213]: task output data [None]
+[INFO] [2023-03-08 01:55:42,559] [202303080155356140690] [960047:140419357169472] - [task_base_worker.report_task_info_to_driver] [line:113]: report TaskExecutor 202303080155356140690_reader_0 0 guest 9999 to driver:
+{'job_id': '202303080155356140690', 'component_name': 'reader_0', 'task_id': '202303080155356140690_reader_0', 'task_version': '0', 'role': 'guest', 'party_id': '9999', 'run_ip': '10.244.0.20', 'run_pid': 960047, 'run_port': '9380', 'party_status': 'success', 'end_time': 1678240542559, 'elapsed': 1553}
+[INFO] [2023-03-08 01:55:42,559] [202303080155356140690] [960047:140419357169472] - [control_client.report_task] [line:39]: request update job 202303080155356140690 task 202303080155356140690_reader_0 0 on guest 9999
+[INFO] [2023-03-08 01:55:42,580] [202303080155356140690] [960047:140419357169472] - [task_executor._run_] [line:282]: finish reader_0 202303080155356140690_reader_0 0 on guest 9999 with success
+[INFO] [2023-03-08 01:55:42,581] [202303080155356140690] [960047:140419357169472] - [base_worker.run] [line:125]: worker TaskExecutor, process role: ProcessRole.WORKER, pid: 960047, elapsed: 1948 ms

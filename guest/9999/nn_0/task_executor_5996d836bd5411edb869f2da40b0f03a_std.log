@@ -1,0 +1,387 @@
+{}
+2023-03-08 01:55:57.675 INFO  [140612159231808] Client:88 | Subscribing on Topic :fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-<dtype>-<dtype>
+2023-03-08 01:55:57.676 INFO  [140610416391936] ExecutorService:41 | Run io_service in a single thread
+2023-03-08 01:55:57.676 INFO  [140612159231808] ClientConnection:189 | [<none> -> pulsar://pulsar:6650] Create ClientConnection, timeout=10000
+2023-03-08 01:55:57.676 INFO  [140612159231808] ConnectionPool:96 | Created connection for pulsar://pulsar:6650
+2023-03-08 01:55:57.676 INFO  [140610416391936] ClientConnection:375 | [10.244.0.20:35124 -> 10.109.103.13:6650] Connected to broker
+2023-03-08 01:55:57.683 INFO  [140610416391936] HandlerBase:61 | [persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-<dtype>-<dtype>, unique, 0] Getting connection from pool
+2023-03-08 01:55:57.683 INFO  [140610466731776] ExecutorService:41 | Run io_service in a single thread
+2023-03-08 01:55:57.703 INFO  [140610416391936] ClientConnection:189 | [<none> -> pulsar://pulsar:6650] Create ClientConnection, timeout=10000
+2023-03-08 01:55:57.703 INFO  [140610416391936] ConnectionPool:96 | Created connection for pulsar://localhost:6650
+2023-03-08 01:55:57.703 INFO  [140610416391936] ClientConnection:377 | [10.244.0.20:35140 -> 10.109.103.13:6650] Connected to broker through proxy. Logical broker: pulsar://localhost:6650
+2023-03-08 01:55:57.769 INFO  [140610416391936] ConsumerImpl:220 | [persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-<dtype>-<dtype>, unique, 0] Created consumer on broker [10.244.0.20:35140 -> 10.109.103.13:6650] 
+2023-03-08 01:55:57.770 INFO  [140612159231808] ConsumerImpl:984 | [persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-<dtype>-<dtype>, unique, 0] Closing consumer for topic persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-<dtype>-<dtype>
+2023-03-08 01:55:57.771 INFO  [140610416391936] ConsumerImpl:1034 | [persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-<dtype>-<dtype>, unique, 0] Closed consumer 0
+2023-03-08 01:55:57.771 INFO  [140612159231808] ClientImpl:505 | Closing Pulsar client with 0 producers and 1 consumers
+2023-03-08 01:55:57.771 INFO  [140610475124480] ClientConnection:1563 | [10.244.0.20:35140 -> 10.109.103.13:6650] Connection closed
+2023-03-08 01:55:57.771 INFO  [140610475124480] ClientConnection:263 | [10.244.0.20:35140 -> 10.109.103.13:6650] Destroyed connection
+2023-03-08 01:55:57.771 INFO  [140610475124480] ClientConnection:1563 | [10.244.0.20:35124 -> 10.109.103.13:6650] Connection closed
+2023-03-08 01:55:57.771 INFO  [140610475124480] ClientConnection:263 | [10.244.0.20:35124 -> 10.109.103.13:6650] Destroyed connection
+2023-03-08 01:55:57.771 INFO  [140610416391936] ExecutorService:47 | Event loop of ExecutorService exits successfully
+2023-03-08 01:55:57.771 INFO  [140610466731776] ExecutorService:47 | Event loop of ExecutorService exits successfully
+2023-03-08 01:55:57.797 INFO  [140612159231808] Client:88 | Subscribing on Topic :fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-hash.9df77bd5df7830d18b2d.fedavg__uuid
+2023-03-08 01:55:57.797 INFO  [140610458339072] ExecutorService:41 | Run io_service in a single thread
+2023-03-08 01:55:57.797 INFO  [140612159231808] ClientConnection:189 | [<none> -> pulsar://pulsar:6650] Create ClientConnection, timeout=10000
+2023-03-08 01:55:57.797 INFO  [140612159231808] ConnectionPool:96 | Created connection for pulsar://pulsar:6650
+2023-03-08 01:55:57.797 INFO  [140610458339072] ClientConnection:375 | [10.244.0.20:35168 -> 10.109.103.13:6650] Connected to broker
+2023-03-08 01:55:57.798 INFO  [140610458339072] HandlerBase:61 | [persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-hash.9df77bd5df7830d18b2d.fedavg__uuid, unique, 0] Getting connection from pool
+2023-03-08 01:55:57.798 INFO  [140610466731776] ExecutorService:41 | Run io_service in a single thread
+2023-03-08 01:55:57.798 INFO  [140610458339072] ClientConnection:189 | [<none> -> pulsar://pulsar:6650] Create ClientConnection, timeout=10000
+2023-03-08 01:55:57.798 INFO  [140610458339072] ConnectionPool:96 | Created connection for pulsar://localhost:6650
+2023-03-08 01:55:57.799 INFO  [140610458339072] ClientConnection:377 | [10.244.0.20:35170 -> 10.109.103.13:6650] Connected to broker through proxy. Logical broker: pulsar://localhost:6650
+2023-03-08 01:55:57.814 INFO  [140610458339072] ConsumerImpl:220 | [persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-hash.9df77bd5df7830d18b2d.fedavg__uuid, unique, 0] Created consumer on broker [10.244.0.20:35170 -> 10.109.103.13:6650] 
+2023-03-08 01:55:57.815 INFO  [140612159231808] ConsumerImpl:984 | [persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-hash.9df77bd5df7830d18b2d.fedavg__uuid, unique, 0] Closing consumer for topic persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-hash.9df77bd5df7830d18b2d.fedavg__uuid
+2023-03-08 01:55:57.816 INFO  [140610458339072] ConsumerImpl:1034 | [persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-hash.9df77bd5df7830d18b2d.fedavg__uuid, unique, 0] Closed consumer 0
+2023-03-08 01:55:57.816 INFO  [140612159231808] ClientImpl:505 | Closing Pulsar client with 0 producers and 1 consumers
+2023-03-08 01:55:57.816 INFO  [140610416391936] ClientConnection:1563 | [10.244.0.20:35170 -> 10.109.103.13:6650] Connection closed
+2023-03-08 01:55:57.816 INFO  [140610416391936] ClientConnection:263 | [10.244.0.20:35170 -> 10.109.103.13:6650] Destroyed connection
+2023-03-08 01:55:57.816 INFO  [140610416391936] ClientConnection:1563 | [10.244.0.20:35168 -> 10.109.103.13:6650] Connection closed
+2023-03-08 01:55:57.816 INFO  [140610416391936] ClientConnection:263 | [10.244.0.20:35168 -> 10.109.103.13:6650] Destroyed connection
+2023-03-08 01:55:57.816 INFO  [140610458339072] ExecutorService:47 | Event loop of ExecutorService exits successfully
+2023-03-08 01:55:57.816 INFO  [140610466731776] ExecutorService:47 | Event loop of ExecutorService exits successfully
+2023-03-08 01:55:57.817 INFO  [140612159231808] Client:88 | Subscribing on Topic :fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-<dtype>-<dtype>
+2023-03-08 01:55:57.817 INFO  [140610475124480] ExecutorService:41 | Run io_service in a single thread
+2023-03-08 01:55:57.817 INFO  [140612159231808] ClientConnection:189 | [<none> -> pulsar://pulsar:6650] Create ClientConnection, timeout=10000
+2023-03-08 01:55:57.817 INFO  [140612159231808] ConnectionPool:96 | Created connection for pulsar://pulsar:6650
+2023-03-08 01:55:57.817 INFO  [140610475124480] ClientConnection:375 | [10.244.0.20:35176 -> 10.109.103.13:6650] Connected to broker
+2023-03-08 01:55:57.818 INFO  [140610475124480] HandlerBase:61 | [persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-<dtype>-<dtype>, unique, 0] Getting connection from pool
+2023-03-08 01:55:57.818 INFO  [140610466731776] ExecutorService:41 | Run io_service in a single thread
+2023-03-08 01:55:57.818 INFO  [140610475124480] ClientConnection:189 | [<none> -> pulsar://pulsar:6650] Create ClientConnection, timeout=10000
+2023-03-08 01:55:57.818 INFO  [140610475124480] ConnectionPool:96 | Created connection for pulsar://localhost:6650
+2023-03-08 01:55:57.819 INFO  [140610475124480] ClientConnection:377 | [10.244.0.20:35178 -> 10.109.103.13:6650] Connected to broker through proxy. Logical broker: pulsar://localhost:6650
+2023-03-08 01:55:57.820 INFO  [140610475124480] ConsumerImpl:220 | [persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-<dtype>-<dtype>, unique, 0] Created consumer on broker [10.244.0.20:35178 -> 10.109.103.13:6650] 
+2023-03-08 01:55:57.820 INFO  [140610475124480] ConsumerImpl:966 | Broker notification of Closed consumer: 0
+2023-03-08 01:55:57.820 INFO  [140610475124480] HandlerBase:139 | [persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-<dtype>-<dtype>, unique, 0] Schedule reconnection in 0.1 s
+2023-03-08 01:55:57.822 INFO  [140610475124480] ConsumerImpl:1175 | [persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-<dtype>-<dtype>, unique, 0] Seek successfully
+2023-03-08 01:55:57.920 INFO  [140610475124480] HandlerBase:61 | [persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-<dtype>-<dtype>, unique, 0] Getting connection from pool
+2023-03-08 01:55:57.921 INFO  [140610475124480] ConsumerImpl:220 | [persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-<dtype>-<dtype>, unique, 0] Created consumer on broker [10.244.0.20:35178 -> 10.109.103.13:6650] 
+2023-03-08 01:55:57.922 INFO  [140612159231808] ConsumerImpl:984 | [persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-<dtype>-<dtype>, unique, 0] Closing consumer for topic persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-<dtype>-<dtype>
+2023-03-08 01:55:57.923 INFO  [140610475124480] ConsumerImpl:1034 | [persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-<dtype>-<dtype>, unique, 0] Closed consumer 0
+2023-03-08 01:55:57.923 INFO  [140612159231808] ClientImpl:505 | Closing Pulsar client with 0 producers and 1 consumers
+2023-03-08 01:55:57.923 INFO  [140610458339072] ClientConnection:1563 | [10.244.0.20:35178 -> 10.109.103.13:6650] Connection closed
+2023-03-08 01:55:57.923 INFO  [140610458339072] ClientConnection:263 | [10.244.0.20:35178 -> 10.109.103.13:6650] Destroyed connection
+2023-03-08 01:55:57.923 INFO  [140610458339072] ClientConnection:1563 | [10.244.0.20:35176 -> 10.109.103.13:6650] Connection closed
+2023-03-08 01:55:57.923 INFO  [140610458339072] ClientConnection:263 | [10.244.0.20:35176 -> 10.109.103.13:6650] Destroyed connection
+2023-03-08 01:55:57.923 INFO  [140610475124480] ExecutorService:47 | Event loop of ExecutorService exits successfully
+2023-03-08 01:55:57.923 INFO  [140610466731776] ExecutorService:47 | Event loop of ExecutorService exits successfully
+2023-03-08 01:55:57.935 INFO  [140612159231808] Client:88 | Subscribing on Topic :fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-hash.07899a730252f12ede87.fedavg__pubkey
+2023-03-08 01:55:57.935 INFO  [140610416391936] ExecutorService:41 | Run io_service in a single thread
+2023-03-08 01:55:57.935 INFO  [140612159231808] ClientConnection:189 | [<none> -> pulsar://pulsar:6650] Create ClientConnection, timeout=10000
+2023-03-08 01:55:57.935 INFO  [140612159231808] ConnectionPool:96 | Created connection for pulsar://pulsar:6650
+2023-03-08 01:55:57.936 INFO  [140610416391936] ClientConnection:375 | [10.244.0.20:35210 -> 10.109.103.13:6650] Connected to broker
+2023-03-08 01:55:57.937 INFO  [140610416391936] HandlerBase:61 | [persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-hash.07899a730252f12ede87.fedavg__pubkey, unique, 0] Getting connection from pool
+2023-03-08 01:55:57.937 INFO  [140610466731776] ExecutorService:41 | Run io_service in a single thread
+2023-03-08 01:55:57.937 INFO  [140610416391936] ClientConnection:189 | [<none> -> pulsar://pulsar:6650] Create ClientConnection, timeout=10000
+2023-03-08 01:55:57.937 INFO  [140610416391936] ConnectionPool:96 | Created connection for pulsar://localhost:6650
+2023-03-08 01:55:57.937 INFO  [140610416391936] ClientConnection:377 | [10.244.0.20:35212 -> 10.109.103.13:6650] Connected to broker through proxy. Logical broker: pulsar://localhost:6650
+2023-03-08 01:55:57.955 INFO  [140610416391936] ConsumerImpl:220 | [persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-hash.07899a730252f12ede87.fedavg__pubkey, unique, 0] Created consumer on broker [10.244.0.20:35212 -> 10.109.103.13:6650] 
+2023-03-08 01:55:57.956 INFO  [140612159231808] ConsumerImpl:984 | [persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-hash.07899a730252f12ede87.fedavg__pubkey, unique, 0] Closing consumer for topic persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-hash.07899a730252f12ede87.fedavg__pubkey
+2023-03-08 01:55:57.957 INFO  [140610416391936] ConsumerImpl:1034 | [persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-hash.07899a730252f12ede87.fedavg__pubkey, unique, 0] Closed consumer 0
+2023-03-08 01:55:57.957 INFO  [140612159231808] ClientImpl:505 | Closing Pulsar client with 0 producers and 1 consumers
+2023-03-08 01:55:57.957 INFO  [140610475124480] ClientConnection:1563 | [10.244.0.20:35212 -> 10.109.103.13:6650] Connection closed
+2023-03-08 01:55:57.957 INFO  [140610475124480] ClientConnection:263 | [10.244.0.20:35212 -> 10.109.103.13:6650] Destroyed connection
+2023-03-08 01:55:57.957 INFO  [140610475124480] ClientConnection:1563 | [10.244.0.20:35210 -> 10.109.103.13:6650] Connection closed
+2023-03-08 01:55:57.957 INFO  [140610475124480] ClientConnection:263 | [10.244.0.20:35210 -> 10.109.103.13:6650] Destroyed connection
+2023-03-08 01:55:57.957 INFO  [140610416391936] ExecutorService:47 | Event loop of ExecutorService exits successfully
+2023-03-08 01:55:57.957 INFO  [140610466731776] ExecutorService:47 | Event loop of ExecutorService exits successfully
+2023-03-08 01:55:57.958 INFO  [140610458339072] ExecutorService:41 | Run io_service in a single thread
+2023-03-08 01:55:57.958 INFO  [140612159231808] ClientConnection:189 | [<none> -> pulsar://pulsar:6650] Create ClientConnection, timeout=10000
+2023-03-08 01:55:57.958 INFO  [140612159231808] ConnectionPool:96 | Created connection for pulsar://pulsar:6650
+2023-03-08 01:55:57.959 INFO  [140610458339072] ClientConnection:375 | [10.244.0.20:35218 -> 10.109.103.13:6650] Connected to broker
+2023-03-08 01:55:57.959 INFO  [140610458339072] HandlerBase:61 | [persistent://fl-tenant/202303080155356140690_nn_0_0/guest-9999-arbiter-10000-<dtype>-<dtype>, unique_producer] Getting connection from pool
+2023-03-08 01:55:57.959 INFO  [140610458339072] ClientConnection:189 | [<none> -> pulsar://pulsar:6650] Create ClientConnection, timeout=10000
+2023-03-08 01:55:57.959 INFO  [140610458339072] ConnectionPool:96 | Created connection for pulsar://localhost:6650
+2023-03-08 01:55:57.960 INFO  [140610458339072] ClientConnection:377 | [10.244.0.20:35220 -> 10.109.103.13:6650] Connected to broker through proxy. Logical broker: pulsar://localhost:6650
+2023-03-08 01:55:57.985 INFO  [140610458339072] ProducerImpl:174 | [persistent://fl-tenant/202303080155356140690_nn_0_0/guest-9999-arbiter-10000-<dtype>-<dtype>, unique_producer] Created producer on broker [10.244.0.20:35220 -> 10.109.103.13:6650] 
+2023-03-08 01:55:57.999 INFO  [140610466731776] ExecutorService:41 | Run io_service in a single thread
+2023-03-08 01:55:57.999 INFO  [140612159231808] ClientConnection:189 | [<none> -> pulsar://pulsar:6650] Create ClientConnection, timeout=10000
+2023-03-08 01:55:57.999 INFO  [140612159231808] ConnectionPool:96 | Created connection for pulsar://pulsar:6650
+2023-03-08 01:55:57.999 INFO  [140610466731776] ClientConnection:375 | [10.244.0.20:35236 -> 10.109.103.13:6650] Connected to broker
+2023-03-08 01:55:58.003 INFO  [140610466731776] HandlerBase:61 | [persistent://fl-tenant/202303080155356140690_nn_0_0/guest-9999-arbiter-10000-hash.21a065798b393e3a036b.fedavg__p_power_r, unique_producer] Getting connection from pool
+2023-03-08 01:55:58.003 INFO  [140610466731776] ClientConnection:189 | [<none> -> pulsar://pulsar:6650] Create ClientConnection, timeout=10000
+2023-03-08 01:55:58.003 INFO  [140610466731776] ConnectionPool:96 | Created connection for pulsar://localhost:6650
+2023-03-08 01:55:58.003 INFO  [140610466731776] ClientConnection:377 | [10.244.0.20:35238 -> 10.109.103.13:6650] Connected to broker through proxy. Logical broker: pulsar://localhost:6650
+2023-03-08 01:55:58.054 INFO  [140610466731776] ProducerImpl:174 | [persistent://fl-tenant/202303080155356140690_nn_0_0/guest-9999-arbiter-10000-hash.21a065798b393e3a036b.fedavg__p_power_r, unique_producer] Created producer on broker [10.244.0.20:35238 -> 10.109.103.13:6650] 
+2023-03-08 01:55:58.056 INFO  [140612159231808] Client:88 | Subscribing on Topic :fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-<dtype>-<dtype>
+2023-03-08 01:55:58.056 INFO  [140612159231808] ClientConnection:189 | [<none> -> pulsar://pulsar:6650] Create ClientConnection, timeout=10000
+2023-03-08 01:55:58.056 INFO  [140612159231808] ConnectionPool:96 | Created connection for pulsar://pulsar:6650
+2023-03-08 01:55:58.057 INFO  [140611433690880] ExecutorService:41 | Run io_service in a single thread
+2023-03-08 01:55:58.058 INFO  [140611433690880] ClientConnection:375 | [10.244.0.20:35240 -> 10.109.103.13:6650] Connected to broker
+2023-03-08 01:55:58.059 INFO  [140611433690880] HandlerBase:61 | [persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-<dtype>-<dtype>, unique, 0] Getting connection from pool
+2023-03-08 01:55:58.059 INFO  [140610659698432] ExecutorService:41 | Run io_service in a single thread
+2023-03-08 01:55:58.059 INFO  [140611433690880] ClientConnection:189 | [<none> -> pulsar://pulsar:6650] Create ClientConnection, timeout=10000
+2023-03-08 01:55:58.059 INFO  [140611433690880] ConnectionPool:96 | Created connection for pulsar://localhost:6650
+2023-03-08 01:55:58.060 INFO  [140611433690880] ClientConnection:377 | [10.244.0.20:35242 -> 10.109.103.13:6650] Connected to broker through proxy. Logical broker: pulsar://localhost:6650
+2023-03-08 01:55:58.061 INFO  [140611433690880] ConsumerImpl:220 | [persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-<dtype>-<dtype>, unique, 0] Created consumer on broker [10.244.0.20:35242 -> 10.109.103.13:6650] 
+2023-03-08 01:55:58.061 INFO  [140611433690880] ConsumerImpl:966 | Broker notification of Closed consumer: 0
+2023-03-08 01:55:58.061 INFO  [140611433690880] HandlerBase:139 | [persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-<dtype>-<dtype>, unique, 0] Schedule reconnection in 0.1 s
+2023-03-08 01:55:58.064 INFO  [140611433690880] ConsumerImpl:1175 | [persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-<dtype>-<dtype>, unique, 0] Seek successfully
+2023-03-08 01:55:58.162 INFO  [140611433690880] HandlerBase:61 | [persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-<dtype>-<dtype>, unique, 0] Getting connection from pool
+2023-03-08 01:55:58.163 INFO  [140611433690880] ConsumerImpl:220 | [persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-<dtype>-<dtype>, unique, 0] Created consumer on broker [10.244.0.20:35242 -> 10.109.103.13:6650] 
+2023-03-08 01:55:58.207 INFO  [140612159231808] ConsumerImpl:984 | [persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-<dtype>-<dtype>, unique, 0] Closing consumer for topic persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-<dtype>-<dtype>
+2023-03-08 01:55:58.207 INFO  [140611433690880] ConsumerImpl:1034 | [persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-<dtype>-<dtype>, unique, 0] Closed consumer 0
+2023-03-08 01:55:58.207 INFO  [140612159231808] ClientImpl:505 | Closing Pulsar client with 0 producers and 1 consumers
+2023-03-08 01:55:58.207 INFO  [140610617751296] ClientConnection:1563 | [10.244.0.20:35242 -> 10.109.103.13:6650] Connection closed
+2023-03-08 01:55:58.208 INFO  [140610617751296] ClientConnection:263 | [10.244.0.20:35242 -> 10.109.103.13:6650] Destroyed connection
+2023-03-08 01:55:58.208 INFO  [140610617751296] ClientConnection:1563 | [10.244.0.20:35240 -> 10.109.103.13:6650] Connection closed
+2023-03-08 01:55:58.208 INFO  [140610617751296] ClientConnection:263 | [10.244.0.20:35240 -> 10.109.103.13:6650] Destroyed connection
+2023-03-08 01:55:58.208 INFO  [140611433690880] ExecutorService:47 | Event loop of ExecutorService exits successfully
+2023-03-08 01:55:58.208 INFO  [140610659698432] ExecutorService:47 | Event loop of ExecutorService exits successfully
+2023-03-08 01:55:58.208 INFO  [140612159231808] ProducerImpl:651 | [persistent://fl-tenant/202303080155356140690_nn_0_0/guest-9999-arbiter-10000-<dtype>-<dtype>, unique_producer] Closing producer for topic persistent://fl-tenant/202303080155356140690_nn_0_0/guest-9999-arbiter-10000-<dtype>-<dtype>
+2023-03-08 01:55:58.208 INFO  [140610458339072] ProducerImpl:691 | [persistent://fl-tenant/202303080155356140690_nn_0_0/guest-9999-arbiter-10000-<dtype>-<dtype>, unique_producer] Closed producer
+2023-03-08 01:55:58.208 INFO  [140612159231808] ClientImpl:505 | Closing Pulsar client with 1 producers and 0 consumers
+2023-03-08 01:55:58.208 INFO  [140611391743744] ClientConnection:1563 | [10.244.0.20:35220 -> 10.109.103.13:6650] Connection closed
+2023-03-08 01:55:58.208 INFO  [140611391743744] ClientConnection:263 | [10.244.0.20:35220 -> 10.109.103.13:6650] Destroyed connection
+2023-03-08 01:55:58.208 INFO  [140611391743744] ClientConnection:1563 | [10.244.0.20:35218 -> 10.109.103.13:6650] Connection closed
+2023-03-08 01:55:58.208 INFO  [140611391743744] ClientConnection:263 | [10.244.0.20:35218 -> 10.109.103.13:6650] Destroyed connection
+2023-03-08 01:55:58.208 INFO  [140610458339072] ExecutorService:47 | Event loop of ExecutorService exits successfully
+2023-03-08 01:55:58.208 INFO  [140612159231808] ProducerImpl:620 | Producer - [persistent://fl-tenant/202303080155356140690_nn_0_0/guest-9999-arbiter-10000-<dtype>-<dtype>, unique_producer] , [batching  = off]
+2023-03-08 01:55:58.220 INFO  [140612159231808] Client:88 | Subscribing on Topic :fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-hash.2cce3f65445e2c0c7469.fedavg__p_power_r_bc
+2023-03-08 01:55:58.220 INFO  [140610475124480] ExecutorService:41 | Run io_service in a single thread
+2023-03-08 01:55:58.220 INFO  [140612159231808] ClientConnection:189 | [<none> -> pulsar://pulsar:6650] Create ClientConnection, timeout=10000
+2023-03-08 01:55:58.220 INFO  [140612159231808] ConnectionPool:96 | Created connection for pulsar://pulsar:6650
+2023-03-08 01:55:58.220 INFO  [140610475124480] ClientConnection:375 | [10.244.0.20:35290 -> 10.109.103.13:6650] Connected to broker
+2023-03-08 01:55:58.223 INFO  [140610475124480] HandlerBase:61 | [persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-hash.2cce3f65445e2c0c7469.fedavg__p_power_r_bc, unique, 0] Getting connection from pool
+2023-03-08 01:55:58.223 INFO  [140610458339072] ExecutorService:41 | Run io_service in a single thread
+2023-03-08 01:55:58.223 INFO  [140610475124480] ClientConnection:189 | [<none> -> pulsar://pulsar:6650] Create ClientConnection, timeout=10000
+2023-03-08 01:55:58.223 INFO  [140610475124480] ConnectionPool:96 | Created connection for pulsar://localhost:6650
+2023-03-08 01:55:58.223 INFO  [140610475124480] ClientConnection:377 | [10.244.0.20:35296 -> 10.109.103.13:6650] Connected to broker through proxy. Logical broker: pulsar://localhost:6650
+2023-03-08 01:55:58.284 INFO  [140610475124480] ConsumerImpl:220 | [persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-hash.2cce3f65445e2c0c7469.fedavg__p_power_r_bc, unique, 0] Created consumer on broker [10.244.0.20:35296 -> 10.109.103.13:6650] 
+2023-03-08 01:55:58.285 INFO  [140612159231808] ConsumerImpl:984 | [persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-hash.2cce3f65445e2c0c7469.fedavg__p_power_r_bc, unique, 0] Closing consumer for topic persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-hash.2cce3f65445e2c0c7469.fedavg__p_power_r_bc
+2023-03-08 01:55:58.286 INFO  [140610475124480] ConsumerImpl:1034 | [persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-hash.2cce3f65445e2c0c7469.fedavg__p_power_r_bc, unique, 0] Closed consumer 0
+2023-03-08 01:55:58.286 INFO  [140612159231808] ClientImpl:505 | Closing Pulsar client with 0 producers and 1 consumers
+2023-03-08 01:55:58.286 INFO  [140610617751296] ClientConnection:1563 | [10.244.0.20:35296 -> 10.109.103.13:6650] Connection closed
+2023-03-08 01:55:58.286 INFO  [140610617751296] ClientConnection:263 | [10.244.0.20:35296 -> 10.109.103.13:6650] Destroyed connection
+2023-03-08 01:55:58.286 INFO  [140610617751296] ClientConnection:1563 | [10.244.0.20:35290 -> 10.109.103.13:6650] Connection closed
+2023-03-08 01:55:58.286 INFO  [140610617751296] ClientConnection:263 | [10.244.0.20:35290 -> 10.109.103.13:6650] Destroyed connection
+2023-03-08 01:55:58.286 INFO  [140610475124480] ExecutorService:47 | Event loop of ExecutorService exits successfully
+2023-03-08 01:55:58.286 INFO  [140610458339072] ExecutorService:47 | Event loop of ExecutorService exits successfully
+2023-03-08 01:55:58.288 INFO  [140611391743744] ExecutorService:41 | Run io_service in a single thread
+2023-03-08 01:55:58.288 INFO  [140612159231808] ClientConnection:189 | [<none> -> pulsar://pulsar:6650] Create ClientConnection, timeout=10000
+2023-03-08 01:55:58.288 INFO  [140612159231808] ConnectionPool:96 | Created connection for pulsar://pulsar:6650
+2023-03-08 01:55:58.288 INFO  [140611391743744] ClientConnection:375 | [10.244.0.20:35314 -> 10.109.103.13:6650] Connected to broker
+2023-03-08 01:55:58.289 INFO  [140611391743744] HandlerBase:61 | [persistent://fl-tenant/202303080155356140690_nn_0_0/guest-9999-arbiter-10000-<dtype>-<dtype>, unique_producer] Getting connection from pool
+2023-03-08 01:55:58.289 INFO  [140611391743744] ClientConnection:189 | [<none> -> pulsar://pulsar:6650] Create ClientConnection, timeout=10000
+2023-03-08 01:55:58.289 INFO  [140611391743744] ConnectionPool:96 | Created connection for pulsar://localhost:6650
+2023-03-08 01:55:58.289 INFO  [140611391743744] ClientConnection:377 | [10.244.0.20:35316 -> 10.109.103.13:6650] Connected to broker through proxy. Logical broker: pulsar://localhost:6650
+2023-03-08 01:55:58.290 INFO  [140611391743744] ProducerImpl:174 | [persistent://fl-tenant/202303080155356140690_nn_0_0/guest-9999-arbiter-10000-<dtype>-<dtype>, unique_producer] Created producer on broker [10.244.0.20:35316 -> 10.109.103.13:6650] 
+2023-03-08 01:55:58.304 INFO  [140610458339072] ExecutorService:41 | Run io_service in a single thread
+2023-03-08 01:55:58.304 INFO  [140612159231808] ClientConnection:189 | [<none> -> pulsar://pulsar:6650] Create ClientConnection, timeout=10000
+2023-03-08 01:55:58.304 INFO  [140612159231808] ConnectionPool:96 | Created connection for pulsar://pulsar:6650
+2023-03-08 01:55:58.305 INFO  [140610458339072] ClientConnection:375 | [10.244.0.20:35334 -> 10.109.103.13:6650] Connected to broker
+2023-03-08 01:55:58.308 INFO  [140610458339072] HandlerBase:61 | [persistent://fl-tenant/202303080155356140690_nn_0_0/guest-9999-arbiter-10000-hash.17b7fca829cbe7ec6f14.fedavg_client_to_server, unique_producer] Getting connection from pool
+2023-03-08 01:55:58.308 INFO  [140610458339072] ClientConnection:189 | [<none> -> pulsar://pulsar:6650] Create ClientConnection, timeout=10000
+2023-03-08 01:55:58.308 INFO  [140610458339072] ConnectionPool:96 | Created connection for pulsar://localhost:6650
+2023-03-08 01:55:58.308 INFO  [140610458339072] ClientConnection:377 | [10.244.0.20:35338 -> 10.109.103.13:6650] Connected to broker through proxy. Logical broker: pulsar://localhost:6650
+2023-03-08 01:55:58.358 INFO  [140610458339072] ProducerImpl:174 | [persistent://fl-tenant/202303080155356140690_nn_0_0/guest-9999-arbiter-10000-hash.17b7fca829cbe7ec6f14.fedavg_client_to_server, unique_producer] Created producer on broker [10.244.0.20:35338 -> 10.109.103.13:6650] 
+2023-03-08 01:55:58.360 INFO  [140612159231808] Client:88 | Subscribing on Topic :fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-<dtype>-<dtype>
+2023-03-08 01:55:58.360 INFO  [140611433690880] ExecutorService:41 | Run io_service in a single thread
+2023-03-08 01:55:58.360 INFO  [140612159231808] ClientConnection:189 | [<none> -> pulsar://pulsar:6650] Create ClientConnection, timeout=10000
+2023-03-08 01:55:58.360 INFO  [140612159231808] ConnectionPool:96 | Created connection for pulsar://pulsar:6650
+2023-03-08 01:55:58.361 INFO  [140611433690880] ClientConnection:375 | [10.244.0.20:35344 -> 10.109.103.13:6650] Connected to broker
+2023-03-08 01:55:58.362 INFO  [140611433690880] HandlerBase:61 | [persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-<dtype>-<dtype>, unique, 0] Getting connection from pool
+2023-03-08 01:55:58.362 INFO  [140610575804160] ExecutorService:41 | Run io_service in a single thread
+2023-03-08 01:55:58.362 INFO  [140611433690880] ClientConnection:189 | [<none> -> pulsar://pulsar:6650] Create ClientConnection, timeout=10000
+2023-03-08 01:55:58.362 INFO  [140611433690880] ConnectionPool:96 | Created connection for pulsar://localhost:6650
+2023-03-08 01:55:58.362 INFO  [140611433690880] ClientConnection:377 | [10.244.0.20:35346 -> 10.109.103.13:6650] Connected to broker through proxy. Logical broker: pulsar://localhost:6650
+2023-03-08 01:55:58.363 INFO  [140611433690880] ConsumerImpl:220 | [persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-<dtype>-<dtype>, unique, 0] Created consumer on broker [10.244.0.20:35346 -> 10.109.103.13:6650] 
+2023-03-08 01:55:58.363 INFO  [140611433690880] ConsumerImpl:966 | Broker notification of Closed consumer: 0
+2023-03-08 01:55:58.363 INFO  [140611433690880] HandlerBase:139 | [persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-<dtype>-<dtype>, unique, 0] Schedule reconnection in 0.1 s
+2023-03-08 01:55:58.365 INFO  [140611433690880] ConsumerImpl:1175 | [persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-<dtype>-<dtype>, unique, 0] Seek successfully
+2023-03-08 01:55:58.464 INFO  [140611433690880] HandlerBase:61 | [persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-<dtype>-<dtype>, unique, 0] Getting connection from pool
+2023-03-08 01:55:58.465 INFO  [140611433690880] ConsumerImpl:220 | [persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-<dtype>-<dtype>, unique, 0] Created consumer on broker [10.244.0.20:35346 -> 10.109.103.13:6650] 
+2023-03-08 01:55:58.562 INFO  [140612159231808] ConsumerImpl:984 | [persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-<dtype>-<dtype>, unique, 0] Closing consumer for topic persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-<dtype>-<dtype>
+2023-03-08 01:55:58.562 INFO  [140611433690880] ConsumerImpl:1034 | [persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-<dtype>-<dtype>, unique, 0] Closed consumer 0
+2023-03-08 01:55:58.562 INFO  [140612159231808] ClientImpl:505 | Closing Pulsar client with 0 producers and 1 consumers
+2023-03-08 01:55:58.562 INFO  [140610533857024] ClientConnection:1563 | [10.244.0.20:35346 -> 10.109.103.13:6650] Connection closed
+2023-03-08 01:55:58.562 INFO  [140610533857024] ClientConnection:263 | [10.244.0.20:35346 -> 10.109.103.13:6650] Destroyed connection
+2023-03-08 01:55:58.562 INFO  [140610533857024] ClientConnection:1563 | [10.244.0.20:35344 -> 10.109.103.13:6650] Connection closed
+2023-03-08 01:55:58.562 INFO  [140610533857024] ClientConnection:263 | [10.244.0.20:35344 -> 10.109.103.13:6650] Destroyed connection
+2023-03-08 01:55:58.562 INFO  [140611433690880] ExecutorService:47 | Event loop of ExecutorService exits successfully
+2023-03-08 01:55:58.562 INFO  [140610575804160] ExecutorService:47 | Event loop of ExecutorService exits successfully
+2023-03-08 01:55:58.562 INFO  [140612159231808] ProducerImpl:651 | [persistent://fl-tenant/202303080155356140690_nn_0_0/guest-9999-arbiter-10000-<dtype>-<dtype>, unique_producer] Closing producer for topic persistent://fl-tenant/202303080155356140690_nn_0_0/guest-9999-arbiter-10000-<dtype>-<dtype>
+2023-03-08 01:55:58.563 INFO  [140611391743744] ProducerImpl:691 | [persistent://fl-tenant/202303080155356140690_nn_0_0/guest-9999-arbiter-10000-<dtype>-<dtype>, unique_producer] Closed producer
+2023-03-08 01:55:58.563 INFO  [140612159231808] ClientImpl:505 | Closing Pulsar client with 1 producers and 0 consumers
+2023-03-08 01:55:58.563 INFO  [140610659698432] ClientConnection:1563 | [10.244.0.20:35316 -> 10.109.103.13:6650] Connection closed
+2023-03-08 01:55:58.563 INFO  [140610659698432] ClientConnection:263 | [10.244.0.20:35316 -> 10.109.103.13:6650] Destroyed connection
+2023-03-08 01:55:58.563 INFO  [140610659698432] ClientConnection:1563 | [10.244.0.20:35314 -> 10.109.103.13:6650] Connection closed
+2023-03-08 01:55:58.563 INFO  [140610659698432] ClientConnection:263 | [10.244.0.20:35314 -> 10.109.103.13:6650] Destroyed connection
+2023-03-08 01:55:58.563 INFO  [140611391743744] ExecutorService:47 | Event loop of ExecutorService exits successfully
+2023-03-08 01:55:58.563 INFO  [140612159231808] ProducerImpl:620 | Producer - [persistent://fl-tenant/202303080155356140690_nn_0_0/guest-9999-arbiter-10000-<dtype>-<dtype>, unique_producer] , [batching  = off]
+2023-03-08 01:55:58.575 INFO  [140612159231808] Client:88 | Subscribing on Topic :fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-hash.7a6ac6ae11f0f65053b4.fedavg_server_to_client
+2023-03-08 01:55:58.575 INFO  [140610617751296] ExecutorService:41 | Run io_service in a single thread
+2023-03-08 01:55:58.575 INFO  [140612159231808] ClientConnection:189 | [<none> -> pulsar://pulsar:6650] Create ClientConnection, timeout=10000
+2023-03-08 01:55:58.575 INFO  [140612159231808] ConnectionPool:96 | Created connection for pulsar://pulsar:6650
+2023-03-08 01:55:58.576 INFO  [140610617751296] ClientConnection:375 | [10.244.0.20:35410 -> 10.109.103.13:6650] Connected to broker
+2023-03-08 01:55:58.578 INFO  [140610617751296] HandlerBase:61 | [persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-hash.7a6ac6ae11f0f65053b4.fedavg_server_to_client, unique, 0] Getting connection from pool
+2023-03-08 01:55:58.578 INFO  [140611391743744] ExecutorService:41 | Run io_service in a single thread
+2023-03-08 01:55:58.578 INFO  [140610617751296] ClientConnection:189 | [<none> -> pulsar://pulsar:6650] Create ClientConnection, timeout=10000
+2023-03-08 01:55:58.578 INFO  [140610617751296] ConnectionPool:96 | Created connection for pulsar://localhost:6650
+2023-03-08 01:55:58.578 INFO  [140610617751296] ClientConnection:377 | [10.244.0.20:35416 -> 10.109.103.13:6650] Connected to broker through proxy. Logical broker: pulsar://localhost:6650
+2023-03-08 01:55:58.639 INFO  [140610617751296] ConsumerImpl:220 | [persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-hash.7a6ac6ae11f0f65053b4.fedavg_server_to_client, unique, 0] Created consumer on broker [10.244.0.20:35416 -> 10.109.103.13:6650] 
+2023-03-08 01:55:58.641 INFO  [140612159231808] ConsumerImpl:984 | [persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-hash.7a6ac6ae11f0f65053b4.fedavg_server_to_client, unique, 0] Closing consumer for topic persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-hash.7a6ac6ae11f0f65053b4.fedavg_server_to_client
+2023-03-08 01:55:58.643 INFO  [140610617751296] ConsumerImpl:1034 | [persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-hash.7a6ac6ae11f0f65053b4.fedavg_server_to_client, unique, 0] Closed consumer 0
+2023-03-08 01:55:58.643 INFO  [140612159231808] ClientImpl:505 | Closing Pulsar client with 0 producers and 1 consumers
+2023-03-08 01:55:58.643 INFO  [140610533857024] ClientConnection:1563 | [10.244.0.20:35416 -> 10.109.103.13:6650] Connection closed
+2023-03-08 01:55:58.643 INFO  [140610533857024] ClientConnection:263 | [10.244.0.20:35416 -> 10.109.103.13:6650] Destroyed connection
+2023-03-08 01:55:58.643 INFO  [140610533857024] ClientConnection:1563 | [10.244.0.20:35410 -> 10.109.103.13:6650] Connection closed
+2023-03-08 01:55:58.643 INFO  [140610617751296] ExecutorService:47 | Event loop of ExecutorService exits successfully
+2023-03-08 01:55:58.643 INFO  [140611391743744] ExecutorService:47 | Event loop of ExecutorService exits successfully
+2023-03-08 01:55:58.643 INFO  [140612159231808] ClientConnection:263 | [10.244.0.20:35410 -> 10.109.103.13:6650] Destroyed connection
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+23/03/08 01:56:36 INFO SparkContext: Running Spark version 3.1.3
+23/03/08 01:56:36 INFO ResourceUtils: ==============================================================
+23/03/08 01:56:36 INFO ResourceUtils: No custom resources configured for spark.driver.
+23/03/08 01:56:36 INFO ResourceUtils: ==============================================================
+23/03/08 01:56:36 INFO SparkContext: Submitted application: 202303080155356140690_nn_0#guest
+23/03/08 01:56:36 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 2, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+23/03/08 01:56:36 INFO ResourceProfile: Limiting resource is cpus at 2 tasks per executor
+23/03/08 01:56:36 INFO ResourceProfileManager: Added ResourceProfile id: 0
+23/03/08 01:56:36 INFO SecurityManager: Changing view acls to: root
+23/03/08 01:56:36 INFO SecurityManager: Changing modify acls to: root
+23/03/08 01:56:36 INFO SecurityManager: Changing view acls groups to: 
+23/03/08 01:56:36 INFO SecurityManager: Changing modify acls groups to: 
+23/03/08 01:56:36 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(root); groups with view permissions: Set(); users  with modify permissions: Set(root); groups with modify permissions: Set()
+23/03/08 01:56:36 INFO Utils: Successfully started service 'sparkDriver' on port 34484.
+23/03/08 01:56:36 INFO SparkEnv: Registering MapOutputTracker
+23/03/08 01:56:36 INFO SparkEnv: Registering BlockManagerMaster
+23/03/08 01:56:36 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+23/03/08 01:56:36 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+23/03/08 01:56:36 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+23/03/08 01:56:36 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-f3debc14-1232-4dd8-8927-6140d3698d66
+23/03/08 01:56:36 INFO MemoryStore: MemoryStore started with capacity 413.9 MiB
+23/03/08 01:56:36 INFO SparkEnv: Registering OutputCommitCoordinator
+23/03/08 01:56:37 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+23/03/08 01:56:37 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://10.244.0.20:4040
+23/03/08 01:56:37 INFO StandaloneAppClient$ClientEndpoint: Connecting to master spark://spark-master:7077...
+23/03/08 01:56:37 INFO TransportClientFactory: Successfully created connection to spark-master/10.244.0.10:7077 after 35 ms (0 ms spent in bootstraps)
+23/03/08 01:56:37 INFO StandaloneSchedulerBackend: Connected to Spark cluster with app ID app-20230308015637-0006
+23/03/08 01:56:37 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20230308015637-0006/0 on worker-20230303054516-10.244.0.15-36540 (10.244.0.15:36540) with 2 core(s)
+23/03/08 01:56:37 INFO StandaloneSchedulerBackend: Granted executor ID app-20230308015637-0006/0 on hostPort 10.244.0.15:36540 with 2 core(s), 1024.0 MiB RAM
+23/03/08 01:56:37 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20230308015637-0006/1 on worker-20230303054424-10.244.0.11-38770 (10.244.0.11:38770) with 2 core(s)
+23/03/08 01:56:37 INFO StandaloneSchedulerBackend: Granted executor ID app-20230308015637-0006/1 on hostPort 10.244.0.11:38770 with 2 core(s), 1024.0 MiB RAM
+23/03/08 01:56:37 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 36131.
+23/03/08 01:56:37 INFO NettyBlockTransferService: Server created on 10.244.0.20:36131
+23/03/08 01:56:37 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+23/03/08 01:56:37 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 10.244.0.20, 36131, None)
+23/03/08 01:56:37 INFO BlockManagerMasterEndpoint: Registering block manager 10.244.0.20:36131 with 413.9 MiB RAM, BlockManagerId(driver, 10.244.0.20, 36131, None)
+23/03/08 01:56:37 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 10.244.0.20, 36131, None)
+23/03/08 01:56:37 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 10.244.0.20, 36131, None)
+23/03/08 01:56:37 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20230308015637-0006/1 is now RUNNING
+23/03/08 01:56:37 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20230308015637-0006/0 is now RUNNING
+23/03/08 01:56:37 INFO StandaloneSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+23/03/08 01:56:38 INFO SparkContext: Starting job: count at /data/projects/fate/fate/python/fate_arch/computing/spark/_materialize.py:24
+23/03/08 01:56:38 INFO DAGScheduler: Got job 0 (count at /data/projects/fate/fate/python/fate_arch/computing/spark/_materialize.py:24) with 1 output partitions
+23/03/08 01:56:38 INFO DAGScheduler: Final stage: ResultStage 0 (count at /data/projects/fate/fate/python/fate_arch/computing/spark/_materialize.py:24)
+23/03/08 01:56:38 INFO DAGScheduler: Parents of final stage: List()
+23/03/08 01:56:38 INFO DAGScheduler: Missing parents: List()
+23/03/08 01:56:38 INFO DAGScheduler: Submitting ResultStage 0 (PythonRDD[1] at count at /data/projects/fate/fate/python/fate_arch/computing/spark/_materialize.py:24), which has no missing parents
+23/03/08 01:56:38 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 6.0 KiB, free 413.9 MiB)
+23/03/08 01:56:38 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 3.8 KiB, free 413.9 MiB)
+23/03/08 01:56:38 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 10.244.0.20:36131 (size: 3.8 KiB, free: 413.9 MiB)
+23/03/08 01:56:38 INFO SparkContext: Created broadcast 0 from broadcast at DAGScheduler.scala:1433
+23/03/08 01:56:38 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (PythonRDD[1] at count at /data/projects/fate/fate/python/fate_arch/computing/spark/_materialize.py:24) (first 15 tasks are for partitions Vector(0))
+23/03/08 01:56:38 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks resource profile 0
+23/03/08 01:56:39 INFO CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.244.0.11:51338) with ID 1,  ResourceProfileId 0
+23/03/08 01:56:39 INFO CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.244.0.15:53838) with ID 0,  ResourceProfileId 0
+23/03/08 01:56:39 INFO BlockManagerMasterEndpoint: Registering block manager 10.244.0.11:42388 with 366.3 MiB RAM, BlockManagerId(1, 10.244.0.11, 42388, None)
+23/03/08 01:56:39 INFO BlockManagerMasterEndpoint: Registering block manager 10.244.0.15:39578 with 366.3 MiB RAM, BlockManagerId(0, 10.244.0.15, 39578, None)
+23/03/08 01:56:39 WARN TaskSetManager: Stage 0 contains a task of very large size (45709 KiB). The maximum recommended task size is 1000 KiB.
+23/03/08 01:56:39 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (10.244.0.11, executor 1, partition 0, PROCESS_LOCAL, 46806784 bytes) taskResourceAssignments Map()
+23/03/08 01:56:40 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 10.244.0.11:42388 (size: 3.8 KiB, free: 366.3 MiB)
+23/03/08 01:56:41 INFO BlockManagerInfo: Added rdd_0_0 in memory on 10.244.0.11:42388 (size: 44.7 MiB, free: 321.6 MiB)
+23/03/08 01:56:41 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 2117 ms on 10.244.0.11 (executor 1) (1/1)
+23/03/08 01:56:41 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+23/03/08 01:56:41 INFO PythonAccumulatorV2: Connected to AccumulatorServer at host: 127.0.0.1 port: 38169
+23/03/08 01:56:41 INFO DAGScheduler: ResultStage 0 (count at /data/projects/fate/fate/python/fate_arch/computing/spark/_materialize.py:24) finished in 3.358 s
+23/03/08 01:56:42 INFO DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+23/03/08 01:56:42 INFO TaskSchedulerImpl: Killing all running tasks in stage 0: Stage finished
+23/03/08 01:56:42 INFO DAGScheduler: Job 0 finished: count at /data/projects/fate/fate/python/fate_arch/computing/spark/_materialize.py:24, took 3.411876 s
+2023-03-08 01:56:42.015 INFO  [140609260336896] ExecutorService:41 | Run io_service in a single thread
+2023-03-08 01:56:42.015 INFO  [140612159231808] ClientConnection:189 | [<none> -> pulsar://pulsar:6650] Create ClientConnection, timeout=10000
+2023-03-08 01:56:42.015 INFO  [140612159231808] ConnectionPool:96 | Created connection for pulsar://pulsar:6650
+2023-03-08 01:56:42.015 INFO  [140609260336896] ClientConnection:375 | [10.244.0.20:37452 -> 10.109.103.13:6650] Connected to broker
+2023-03-08 01:56:42.016 INFO  [140609260336896] HandlerBase:61 | [persistent://fl-tenant/202303080155356140690_nn_0_0/guest-9999-arbiter-10000-<dtype>-<dtype>, unique_producer] Getting connection from pool
+2023-03-08 01:56:42.017 INFO  [140609260336896] ClientConnection:189 | [<none> -> pulsar://pulsar:6650] Create ClientConnection, timeout=10000
+2023-03-08 01:56:42.017 INFO  [140609260336896] ConnectionPool:96 | Created connection for pulsar://localhost:6650
+2023-03-08 01:56:42.017 INFO  [140609260336896] ClientConnection:377 | [10.244.0.20:37454 -> 10.109.103.13:6650] Connected to broker through proxy. Logical broker: pulsar://localhost:6650
+2023-03-08 01:56:42.018 INFO  [140609260336896] ProducerImpl:174 | [persistent://fl-tenant/202303080155356140690_nn_0_0/guest-9999-arbiter-10000-<dtype>-<dtype>, unique_producer] Created producer on broker [10.244.0.20:37454 -> 10.109.103.13:6650] 
+23/03/08 01:56:42 INFO SparkContext: Starting job: count at /data/projects/fate/fate/python/fate_arch/computing/spark/_table.py:194
+23/03/08 01:56:42 INFO DAGScheduler: Got job 1 (count at /data/projects/fate/fate/python/fate_arch/computing/spark/_table.py:194) with 1 output partitions
+23/03/08 01:56:42 INFO DAGScheduler: Final stage: ResultStage 1 (count at /data/projects/fate/fate/python/fate_arch/computing/spark/_table.py:194)
+23/03/08 01:56:42 INFO DAGScheduler: Parents of final stage: List()
+23/03/08 01:56:42 INFO DAGScheduler: Missing parents: List()
+23/03/08 01:56:42 INFO DAGScheduler: Submitting ResultStage 1 (PythonRDD[2] at count at /data/projects/fate/fate/python/fate_arch/computing/spark/_table.py:194), which has no missing parents
+23/03/08 01:56:42 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 6.0 KiB, free 413.9 MiB)
+23/03/08 01:56:42 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 3.8 KiB, free 413.9 MiB)
+23/03/08 01:56:42 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 10.244.0.20:36131 (size: 3.8 KiB, free: 413.9 MiB)
+23/03/08 01:56:42 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1433
+23/03/08 01:56:42 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 1 (PythonRDD[2] at count at /data/projects/fate/fate/python/fate_arch/computing/spark/_table.py:194) (first 15 tasks are for partitions Vector(0))
+23/03/08 01:56:42 INFO TaskSchedulerImpl: Adding task set 1.0 with 1 tasks resource profile 0
+23/03/08 01:56:42 WARN TaskSetManager: Stage 1 contains a task of very large size (45709 KiB). The maximum recommended task size is 1000 KiB.
+23/03/08 01:56:42 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1) (10.244.0.11, executor 1, partition 0, PROCESS_LOCAL, 46806784 bytes) taskResourceAssignments Map()
+23/03/08 01:56:42 INFO BlockManagerInfo: Removed broadcast_0_piece0 on 10.244.0.11:42388 in memory (size: 3.8 KiB, free: 321.6 MiB)
+23/03/08 01:56:42 INFO BlockManagerInfo: Removed broadcast_0_piece0 on 10.244.0.20:36131 in memory (size: 3.8 KiB, free: 413.9 MiB)
+23/03/08 01:56:42 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 10.244.0.11:42388 (size: 3.8 KiB, free: 321.6 MiB)
+23/03/08 01:56:42 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 591 ms on 10.244.0.11 (executor 1) (1/1)
+23/03/08 01:56:42 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+23/03/08 01:56:42 INFO DAGScheduler: ResultStage 1 (count at /data/projects/fate/fate/python/fate_arch/computing/spark/_table.py:194) finished in 0.607 s
+23/03/08 01:56:42 INFO DAGScheduler: Job 1 is finished. Cancelling potential speculative or zombie tasks for this job
+23/03/08 01:56:42 INFO TaskSchedulerImpl: Killing all running tasks in stage 1: Stage finished
+23/03/08 01:56:42 INFO DAGScheduler: Job 1 finished: count at /data/projects/fate/fate/python/fate_arch/computing/spark/_table.py:194, took 0.614558 s
+23/03/08 01:56:42 INFO SparkContext: Starting job: count at /data/projects/fate/fate/python/fate_arch/computing/spark/_materialize.py:24
+23/03/08 01:56:42 INFO DAGScheduler: Got job 2 (count at /data/projects/fate/fate/python/fate_arch/computing/spark/_materialize.py:24) with 1 output partitions
+23/03/08 01:56:42 INFO DAGScheduler: Final stage: ResultStage 2 (count at /data/projects/fate/fate/python/fate_arch/computing/spark/_materialize.py:24)
+23/03/08 01:56:42 INFO DAGScheduler: Parents of final stage: List()
+23/03/08 01:56:42 INFO DAGScheduler: Missing parents: List()
+23/03/08 01:56:42 INFO DAGScheduler: Submitting ResultStage 2 (PythonRDD[4] at count at /data/projects/fate/fate/python/fate_arch/computing/spark/_materialize.py:24), which has no missing parents
+23/03/08 01:56:42 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 8.0 KiB, free 413.9 MiB)
+23/03/08 01:56:42 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 4.6 KiB, free 413.9 MiB)
+23/03/08 01:56:42 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 10.244.0.20:36131 (size: 4.6 KiB, free: 413.9 MiB)
+23/03/08 01:56:42 INFO SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:1433
+23/03/08 01:56:42 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 2 (PythonRDD[4] at count at /data/projects/fate/fate/python/fate_arch/computing/spark/_materialize.py:24) (first 15 tasks are for partitions Vector(0))
+23/03/08 01:56:42 INFO TaskSchedulerImpl: Adding task set 2.0 with 1 tasks resource profile 0
+23/03/08 01:56:42 WARN TaskSetManager: Stage 2 contains a task of very large size (45709 KiB). The maximum recommended task size is 1000 KiB.
+23/03/08 01:56:42 INFO TaskSetManager: Starting task 0.0 in stage 2.0 (TID 2) (10.244.0.11, executor 1, partition 0, PROCESS_LOCAL, 46806784 bytes) taskResourceAssignments Map()
+23/03/08 01:56:42 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 10.244.0.20:36131 in memory (size: 3.8 KiB, free: 413.9 MiB)
+23/03/08 01:56:42 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 10.244.0.11:42388 in memory (size: 3.8 KiB, free: 321.6 MiB)
+23/03/08 01:56:43 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 10.244.0.11:42388 (size: 4.6 KiB, free: 321.6 MiB)
+23/03/08 01:56:45 INFO BlockManagerInfo: Added rdd_3_0 in memory on 10.244.0.11:42388 (size: 64.0 B, free: 321.6 MiB)
+23/03/08 01:56:45 INFO TaskSetManager: Finished task 0.0 in stage 2.0 (TID 2) in 2436 ms on 10.244.0.11 (executor 1) (1/1)
+23/03/08 01:56:45 INFO TaskSchedulerImpl: Removed TaskSet 2.0, whose tasks have all completed, from pool 
+23/03/08 01:56:45 INFO DAGScheduler: ResultStage 2 (count at /data/projects/fate/fate/python/fate_arch/computing/spark/_materialize.py:24) finished in 2.445 s
+23/03/08 01:56:45 INFO DAGScheduler: Job 2 is finished. Cancelling potential speculative or zombie tasks for this job
+23/03/08 01:56:45 INFO TaskSchedulerImpl: Killing all running tasks in stage 2: Stage finished
+23/03/08 01:56:45 INFO DAGScheduler: Job 2 finished: count at /data/projects/fate/fate/python/fate_arch/computing/spark/_materialize.py:24, took 2.449836 s
+23/03/08 01:56:45 INFO PythonRDD: Removing RDD 3 from persistence list
+23/03/08 01:56:45 INFO BlockManager: Removing RDD 3
+2023-03-08 01:56:45.163 INFO  [140612159231808] Client:88 | Subscribing on Topic :fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-<dtype>-<dtype>
+2023-03-08 01:56:45.163 INFO  [140611433690880] ExecutorService:41 | Run io_service in a single thread
+2023-03-08 01:56:45.163 INFO  [140612159231808] ClientConnection:189 | [<none> -> pulsar://pulsar:6650] Create ClientConnection, timeout=10000
+2023-03-08 01:56:45.163 INFO  [140612159231808] ConnectionPool:96 | Created connection for pulsar://pulsar:6650
+2023-03-08 01:56:45.164 INFO  [140611433690880] ClientConnection:375 | [10.244.0.20:37696 -> 10.109.103.13:6650] Connected to broker
+2023-03-08 01:56:45.164 INFO  [140611433690880] HandlerBase:61 | [persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-<dtype>-<dtype>, unique, 0] Getting connection from pool
+2023-03-08 01:56:45.164 INFO  [140610617751296] ExecutorService:41 | Run io_service in a single thread
+2023-03-08 01:56:45.165 INFO  [140611433690880] ClientConnection:189 | [<none> -> pulsar://pulsar:6650] Create ClientConnection, timeout=10000
+2023-03-08 01:56:45.165 INFO  [140611433690880] ConnectionPool:96 | Created connection for pulsar://localhost:6650
+2023-03-08 01:56:45.165 INFO  [140611433690880] ClientConnection:377 | [10.244.0.20:37698 -> 10.109.103.13:6650] Connected to broker through proxy. Logical broker: pulsar://localhost:6650
+2023-03-08 01:56:45.166 INFO  [140611433690880] ConsumerImpl:220 | [persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-<dtype>-<dtype>, unique, 0] Created consumer on broker [10.244.0.20:37698 -> 10.109.103.13:6650] 
+2023-03-08 01:56:45.166 INFO  [140611433690880] ConsumerImpl:966 | Broker notification of Closed consumer: 0
+2023-03-08 01:56:45.166 INFO  [140611433690880] HandlerBase:139 | [persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-<dtype>-<dtype>, unique, 0] Schedule reconnection in 0.1 s
+2023-03-08 01:56:45.171 INFO  [140611433690880] ConsumerImpl:1175 | [persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-<dtype>-<dtype>, unique, 0] Seek successfully
+2023-03-08 01:56:45.267 INFO  [140611433690880] HandlerBase:61 | [persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-<dtype>-<dtype>, unique, 0] Getting connection from pool
+2023-03-08 01:56:45.268 INFO  [140611433690880] ConsumerImpl:220 | [persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-<dtype>-<dtype>, unique, 0] Created consumer on broker [10.244.0.20:37698 -> 10.109.103.13:6650] 
+2023-03-08 02:05:58.004 INFO  [140610466731776] ProducerStatsImpl:85 | Producer [persistent://fl-tenant/202303080155356140690_nn_0_0/guest-9999-arbiter-10000-hash.21a065798b393e3a036b.fedavg__p_power_r, unique_producer] , ProducerStatsImpl (numMsgsSent_ = 1, numBytesSent_ = 210, sendMap_ = {[Key: Ok, Value: 1], }, latencyAccumulator_ = Latencies [ 50pct: 0ms, 90pct: 0ms, 99pct: 0ms, 99.9pct: 0ms], totalMsgsSent_ = 1, totalBytesSent_ = 210, totalAcksReceived_ = , totalSendMap_ = {[Key: Ok, Value: 1], }, totalLatencyAccumulator_ = Latencies [ 50pct: 0ms, 90pct: 0ms, 99pct: 0ms, 99.9pct: 0ms])
+2023-03-08 02:05:58.308 INFO  [140610458339072] ProducerStatsImpl:85 | Producer [persistent://fl-tenant/202303080155356140690_nn_0_0/guest-9999-arbiter-10000-hash.17b7fca829cbe7ec6f14.fedavg_client_to_server, unique_producer] , ProducerStatsImpl (numMsgsSent_ = 1, numBytesSent_ = 15, sendMap_ = {[Key: Ok, Value: 1], }, latencyAccumulator_ = Latencies [ 50pct: 0ms, 90pct: 0ms, 99pct: 0ms, 99.9pct: 0ms], totalMsgsSent_ = 1, totalBytesSent_ = 15, totalAcksReceived_ = , totalSendMap_ = {[Key: Ok, Value: 1], }, totalLatencyAccumulator_ = Latencies [ 50pct: 0ms, 90pct: 0ms, 99pct: 0ms, 99.9pct: 0ms])
+2023-03-08 02:06:42.017 INFO  [140609260336896] ProducerStatsImpl:85 | Producer [persistent://fl-tenant/202303080155356140690_nn_0_0/guest-9999-arbiter-10000-<dtype>-<dtype>, unique_producer] , ProducerStatsImpl (numMsgsSent_ = 1, numBytesSent_ = 51, sendMap_ = {[Key: Ok, Value: 1], }, latencyAccumulator_ = Latencies [ 50pct: 0ms, 90pct: 0ms, 99pct: 0ms, 99.9pct: 0ms], totalMsgsSent_ = 1, totalBytesSent_ = 51, totalAcksReceived_ = , totalSendMap_ = {[Key: Ok, Value: 1], }, totalLatencyAccumulator_ = Latencies [ 50pct: 0ms, 90pct: 0ms, 99pct: 0ms, 99.9pct: 0ms])
+2023-03-08 02:06:45.165 INFO  [140611433690880] ConsumerStatsImpl:63 | Consumer [persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-<dtype>-<dtype>, unique, 0] , ConsumerStatsImpl (numBytesRecieved_ = 29, totalNumBytesRecieved_ = 29, receivedMsgMap_ = {[Key: Ok, Value: 1], }, ackedMsgMap_ = {[Key: {Result: Ok, ackType: 0}, Value: 2], }, totalReceivedMsgMap_ = {[Key: Ok, Value: 1], }, totalAckedMsgMap_ = {[Key: {Result: Ok, ackType: 0}, Value: 2], })
+2023-03-08 02:15:58.004 INFO  [140610466731776] ProducerStatsImpl:85 | Producer [persistent://fl-tenant/202303080155356140690_nn_0_0/guest-9999-arbiter-10000-hash.21a065798b393e3a036b.fedavg__p_power_r, unique_producer] , ProducerStatsImpl (numMsgsSent_ = 0, numBytesSent_ = 0, sendMap_ = {}, latencyAccumulator_ = Latencies [ 50pct: 0ms, 90pct: 0ms, 99pct: 0ms, 99.9pct: 0ms], totalMsgsSent_ = 1, totalBytesSent_ = 210, totalAcksReceived_ = , totalSendMap_ = {[Key: Ok, Value: 1], }, totalLatencyAccumulator_ = Latencies [ 50pct: 0ms, 90pct: 0ms, 99pct: 0ms, 99.9pct: 0ms])
+2023-03-08 02:15:58.308 INFO  [140610458339072] ProducerStatsImpl:85 | Producer [persistent://fl-tenant/202303080155356140690_nn_0_0/guest-9999-arbiter-10000-hash.17b7fca829cbe7ec6f14.fedavg_client_to_server, unique_producer] , ProducerStatsImpl (numMsgsSent_ = 0, numBytesSent_ = 0, sendMap_ = {}, latencyAccumulator_ = Latencies [ 50pct: 0ms, 90pct: 0ms, 99pct: 0ms, 99.9pct: 0ms], totalMsgsSent_ = 1, totalBytesSent_ = 15, totalAcksReceived_ = , totalSendMap_ = {[Key: Ok, Value: 1], }, totalLatencyAccumulator_ = Latencies [ 50pct: 0ms, 90pct: 0ms, 99pct: 0ms, 99.9pct: 0ms])
+2023-03-08 02:16:42.017 INFO  [140609260336896] ProducerStatsImpl:85 | Producer [persistent://fl-tenant/202303080155356140690_nn_0_0/guest-9999-arbiter-10000-<dtype>-<dtype>, unique_producer] , ProducerStatsImpl (numMsgsSent_ = 0, numBytesSent_ = 0, sendMap_ = {}, latencyAccumulator_ = Latencies [ 50pct: 0ms, 90pct: 0ms, 99pct: 0ms, 99.9pct: 0ms], totalMsgsSent_ = 1, totalBytesSent_ = 51, totalAcksReceived_ = , totalSendMap_ = {[Key: Ok, Value: 1], }, totalLatencyAccumulator_ = Latencies [ 50pct: 0ms, 90pct: 0ms, 99pct: 0ms, 99.9pct: 0ms])
+2023-03-08 02:16:45.166 INFO  [140611433690880] ConsumerStatsImpl:63 | Consumer [persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-<dtype>-<dtype>, unique, 0] , ConsumerStatsImpl (numBytesRecieved_ = 0, totalNumBytesRecieved_ = 29, receivedMsgMap_ = {}, ackedMsgMap_ = {}, totalReceivedMsgMap_ = {[Key: Ok, Value: 1], }, totalAckedMsgMap_ = {[Key: {Result: Ok, ackType: 0}, Value: 2], })
+2023-03-08 02:25:58.004 INFO  [140610466731776] ProducerStatsImpl:85 | Producer [persistent://fl-tenant/202303080155356140690_nn_0_0/guest-9999-arbiter-10000-hash.21a065798b393e3a036b.fedavg__p_power_r, unique_producer] , ProducerStatsImpl (numMsgsSent_ = 0, numBytesSent_ = 0, sendMap_ = {}, latencyAccumulator_ = Latencies [ 50pct: 0ms, 90pct: 0ms, 99pct: 0ms, 99.9pct: 0ms], totalMsgsSent_ = 1, totalBytesSent_ = 210, totalAcksReceived_ = , totalSendMap_ = {[Key: Ok, Value: 1], }, totalLatencyAccumulator_ = Latencies [ 50pct: 0ms, 90pct: 0ms, 99pct: 0ms, 99.9pct: 0ms])
+2023-03-08 02:25:58.310 INFO  [140610458339072] ProducerStatsImpl:85 | Producer [persistent://fl-tenant/202303080155356140690_nn_0_0/guest-9999-arbiter-10000-hash.17b7fca829cbe7ec6f14.fedavg_client_to_server, unique_producer] , ProducerStatsImpl (numMsgsSent_ = 0, numBytesSent_ = 0, sendMap_ = {}, latencyAccumulator_ = Latencies [ 50pct: 0ms, 90pct: 0ms, 99pct: 0ms, 99.9pct: 0ms], totalMsgsSent_ = 1, totalBytesSent_ = 15, totalAcksReceived_ = , totalSendMap_ = {[Key: Ok, Value: 1], }, totalLatencyAccumulator_ = Latencies [ 50pct: 0ms, 90pct: 0ms, 99pct: 0ms, 99.9pct: 0ms])
+23/03/08 02:26:37 INFO BlockManagerInfo: Removed broadcast_2_piece0 on 10.244.0.20:36131 in memory (size: 4.6 KiB, free: 413.9 MiB)
+23/03/08 02:26:37 INFO BlockManagerInfo: Removed broadcast_2_piece0 on 10.244.0.11:42388 in memory (size: 4.6 KiB, free: 321.6 MiB)
+2023-03-08 02:26:42.017 INFO  [140609260336896] ProducerStatsImpl:85 | Producer [persistent://fl-tenant/202303080155356140690_nn_0_0/guest-9999-arbiter-10000-<dtype>-<dtype>, unique_producer] , ProducerStatsImpl (numMsgsSent_ = 0, numBytesSent_ = 0, sendMap_ = {}, latencyAccumulator_ = Latencies [ 50pct: 0ms, 90pct: 0ms, 99pct: 0ms, 99.9pct: 0ms], totalMsgsSent_ = 1, totalBytesSent_ = 51, totalAcksReceived_ = , totalSendMap_ = {[Key: Ok, Value: 1], }, totalLatencyAccumulator_ = Latencies [ 50pct: 0ms, 90pct: 0ms, 99pct: 0ms, 99.9pct: 0ms])
+2023-03-08 02:26:45.167 INFO  [140611433690880] ConsumerStatsImpl:63 | Consumer [persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-<dtype>-<dtype>, unique, 0] , ConsumerStatsImpl (numBytesRecieved_ = 0, totalNumBytesRecieved_ = 29, receivedMsgMap_ = {}, ackedMsgMap_ = {}, totalReceivedMsgMap_ = {[Key: Ok, Value: 1], }, totalAckedMsgMap_ = {[Key: {Result: Ok, ackType: 0}, Value: 2], })

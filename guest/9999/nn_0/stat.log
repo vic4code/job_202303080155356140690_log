@@ -1,0 +1,522 @@
+[INFO] [2023-03-08 01:55:52,675] [202303080155356140690] [960258:140612159231808] - [base_worker.run] [line:98]: enter TaskExecutor worker in subprocess, pid: 960258
+[INFO] [2023-03-08 01:55:52,675] [202303080155356140690] [960258:140612159231808] - [base_worker.run] [line:101]: log level: INFO
+[INFO] [2023-03-08 01:55:52,675] [202303080155356140690] [960258:140612159231808] - [base_worker.run] [line:103]: PYTHONPATH: /data/projects/spark-3.1.3-bin-hadoop3.2//python/lib/pyspark.zip:/data/projects/spark-3.1.3-bin-hadoop3.2//python/lib/py4j-0.10.9-src.zip:/data/projects/spark-3.1.3-bin-hadoop3.2/jars/spark-core_2.12-3.1.3.jar:/data/projects/fate/fate/python:$PYTHONPATH:/data/projects/fate/fate/python:/data/projects/fate/eggroll/python:/data/projects/fate/fateflow/python:/data/projects/fate/fate/python/fate_client
+[INFO] [2023-03-08 01:55:52,675] [202303080155356140690] [960258:140612159231808] - [base_worker.run] [line:103]: SPARK_HOME: /data/projects/spark-3.1.3-bin-hadoop3.2/
+[INFO] [2023-03-08 01:55:52,675] [202303080155356140690] [960258:140612159231808] - [base_worker.run] [line:103]: VIRTUAL_ENV: /data/projects/python/venv
+[INFO] [2023-03-08 01:55:52,675] [202303080155356140690] [960258:140612159231808] - [base_worker.run] [line:103]: FATE_JOB_ID: 202303080155356140690
+[INFO] [2023-03-08 01:55:52,675] [202303080155356140690] [960258:140612159231808] - [base_worker.run] [line:103]: PROCESS_ROLE: worker
+[INFO] [2023-03-08 01:55:52,676] [202303080155356140690] [960258:140612159231808] - [base_worker.run] [line:103]: FATE_DEPLOY_BASE: None
+[INFO] [2023-03-08 01:55:53,046] [202303080155356140690] [960258:140612159231808] - [task_executor._run_] [line:56]: run nn_0 202303080155356140690_nn_0 0 on guest 9999 task
+[INFO] [2023-03-08 01:55:53,269] [202303080155356140690] [960258:140612159231808] - [task_executor._run_] [line:82]: user name:
+[INFO] [2023-03-08 01:55:53,270] [202303080155356140690] [960258:140612159231808] - [task_base_worker.report_task_info_to_driver] [line:113]: report TaskExecutor 202303080155356140690_nn_0 0 guest 9999 to driver:
+{'job_id': '202303080155356140690', 'component_name': 'nn_0', 'task_id': '202303080155356140690_nn_0', 'task_version': '0', 'role': 'guest', 'party_id': '9999', 'run_ip': '10.244.0.20', 'run_pid': 960258, 'run_port': '9380', 'party_status': 'running'}
+[INFO] [2023-03-08 01:55:53,270] [202303080155356140690] [960258:140612159231808] - [control_client.report_task] [line:39]: request update job 202303080155356140690 task 202303080155356140690_nn_0 0 on guest 9999
+[INFO] [2023-03-08 01:55:53,302] [202303080155356140690] [960258:140612159231808] - [task_executor._run_] [line:124]: previous_components_parameters:
+{}
+[INFO] [2023-03-08 01:55:56,356] [202303080155356140690] [960258:140612159231808] - [task_executor._run_] [line:131]: component parameters on party:
+{
+    "dsl_version": 2,
+    "initiator": {
+        "role": "guest",
+        "party_id": 9999
+    },
+    "role": {
+        "guest": [
+            9999
+        ],
+        "host": [
+            10000
+        ],
+        "arbiter": [
+            10000
+        ]
+    },
+    "job_parameters": {
+        "common": {
+            "job_type": "train",
+            "inheritance_info": {},
+            "computing_engine": "SPARK",
+            "engines_address": {},
+            "federated_mode": "MULTIPLE",
+            "task_parallelism": 1,
+            "computing_partitions": 4,
+            "federated_status_collect_type": "PUSH",
+            "model_id": "arbiter-10000#guest-9999#host-10000#model",
+            "model_version": "202303080155356140690",
+            "auto_retries": 5,
+            "auto_retry_delay": 60,
+            "eggroll_run": {},
+            "spark_run": {},
+            "rabbitmq_run": {},
+            "pulsar_run": {},
+            "adaptation_parameters": {
+                "task_nodes": 2,
+                "task_cores_per_node": 2,
+                "task_memory_per_node": 0,
+                "request_task_cores": 4,
+                "if_initiator_baseline": true
+            }
+        }
+    },
+    "local": {
+        "role": "guest",
+        "party_id": 9999
+    },
+    "module": "HomoNN",
+    "CodePath": "HomoNNClient",
+    "ComponentParam": {
+        "trainer": {
+            "trainer_name": "fedavg_trainer",
+            "param": {
+                "epochs": 10,
+                "batch_size": 1024,
+                "data_loader_worker": 8
+            }
+        },
+        "dataset": {
+            "dataset_name": "image",
+            "param": {}
+        },
+        "torch_seed": 100,
+        "nn_define": {
+            "0-0": {
+                "module_name": "resnet",
+                "class_name": "Resnet",
+                "param": {},
+                "layer": "CustModel",
+                "initializer": {}
+            }
+        },
+        "loss": {
+            "weight": null,
+            "size_average": null,
+            "ignore_index": -100,
+            "reduce": null,
+            "reduction": "mean",
+            "label_smoothing": 0.0,
+            "loss_fn": "CrossEntropyLoss"
+        },
+        "optimizer": {
+            "lr": 0.001,
+            "betas": [
+                0.9,
+                0.999
+            ],
+            "eps": 1e-08,
+            "weight_decay": 0.001,
+            "amsgrad": false,
+            "optimizer": "Adam",
+            "config_type": "pytorch"
+        },
+        "_name": "HomoNN#nn_0",
+        "_feeded_deprecated_params": [],
+        "_user_feeded_params": [
+            "dataset.param",
+            "loss",
+            "optimizer",
+            "dataset",
+            "nn_define",
+            "dataset.dataset_name",
+            "trainer.trainer_name",
+            "torch_seed",
+            "trainer",
+            "trainer.param"
+        ],
+        "_is_raw_conf": false
+    },
+    "ComponentParameterSource": "nn_0"
+}
+[INFO] [2023-03-08 01:55:56,394] [202303080155356140690] [960258:140612159231808] - [_session.__init__] [line:54]: using engines: {'computing': 'SPARK', 'federation': 'PULSAR', 'storage': 'HDFS', 'federated_mode': 'MULTIPLE'}
+[INFO] [2023-03-08 01:55:56,394] [202303080155356140690] [960258:140612159231808] - [_session.__init__] [line:70]: create manager session 202303080155356140690_nn_0_0_guest_9999
+[INFO] [2023-03-08 01:55:56,395] [202303080155356140690] [960258:140612159231808] - [db_models.init_database_tables] [line:85]: start create table SessionRecord
+[INFO] [2023-03-08 01:55:56,397] [202303080155356140690] [960258:140612159231808] - [db_models.init_database_tables] [line:88]: create table success: SessionRecord
+[INFO] [2023-03-08 01:55:56,397] [202303080155356140690] [960258:140612159231808] - [db_models.init_database_tables] [line:85]: start create table StorageConnectorModel
+[INFO] [2023-03-08 01:55:56,398] [202303080155356140690] [960258:140612159231808] - [db_models.init_database_tables] [line:88]: create table success: StorageConnectorModel
+[INFO] [2023-03-08 01:55:56,398] [202303080155356140690] [960258:140612159231808] - [db_models.init_database_tables] [line:85]: start create table StorageTableMetaModel
+[INFO] [2023-03-08 01:55:56,399] [202303080155356140690] [960258:140612159231808] - [db_models.init_database_tables] [line:88]: create table success: StorageTableMetaModel
+[INFO] [2023-03-08 01:55:56,399] [202303080155356140690] [960258:140612159231808] - [_session.save_record] [line:343]: try to save session record for manager 202303080155356140690_nn_0_0_guest_9999, computing SPARK 202303080155356140690_nn_0_0_guest_9999
+[INFO] [2023-03-08 01:55:56,403] [202303080155356140690] [960258:140612159231808] - [_session.save_record] [line:363]: save session record for manager 202303080155356140690_nn_0_0_guest_9999, computing SPARK 202303080155356140690_nn_0_0_guest_9999 successfully
+[INFO] [2023-03-08 01:55:56,842] [202303080155356140690] [960258:140612159231808] - [_session.save_record] [line:343]: try to save session record for manager 202303080155356140690_nn_0_0_guest_9999, federation PULSAR 202303080155356140690_nn_0_0
+[INFO] [2023-03-08 01:55:56,848] [202303080155356140690] [960258:140612159231808] - [_session.save_record] [line:363]: save session record for manager 202303080155356140690_nn_0_0_guest_9999, federation PULSAR 202303080155356140690_nn_0_0 successfully
+[DEBUG] [2023-03-08 01:55:57,225] [202303080155356140690] [960258:140612159231808] - [_federation.from_conf] [line:68]: pulsar_config: {'host': 'pulsar', 'port': 6650, 'mng_port': 8080, 'topic_ttl': 3, 'cluster': 'standalone', 'tenant': 'fl-tenant', 'route_table': 'conf/pulsar_route_table/pulsar_route_table.yaml', 'mode': 'replication', 'max_message_size': 1048576}
+[DEBUG] [2023-03-08 01:55:57,225] [202303080155356140690] [960258:140612159231808] - [_federation.from_conf] [line:82]: pulsar_run: {}
+[DEBUG] [2023-03-08 01:55:57,225] [202303080155356140690] [960258:140612159231808] - [_federation.from_conf] [line:87]: set max message size to 1048576 Bytes
+[DEBUG] [2023-03-08 01:55:57,231] [202303080155356140690] [960258:140612159231808] - [_federation.from_conf] [line:118]: federation mode=replication
+[INFO] [2023-03-08 01:55:57,231] [202303080155356140690] [960258:140612159231808] - [task_executor._run_] [line:157]: run nn_0 202303080155356140690_nn_0 0 on guest 9999 task
+[INFO] [2023-03-08 01:55:57,232] [202303080155356140690] [960258:140612159231808] - [task_executor._run_] [line:158]: component parameters on party:
+{
+    "dsl_version": 2,
+    "initiator": {
+        "role": "guest",
+        "party_id": 9999
+    },
+    "role": {
+        "guest": [
+            9999
+        ],
+        "host": [
+            10000
+        ],
+        "arbiter": [
+            10000
+        ]
+    },
+    "job_parameters": {
+        "job_type": "train",
+        "inheritance_info": {},
+        "computing_engine": "SPARK",
+        "federation_engine": "PULSAR",
+        "storage_engine": "HDFS",
+        "engines_address": {
+            "computing": {
+                "home": "/data/projects/spark-3.1.3-bin-hadoop3.2/",
+                "cores_per_node": 20,
+                "nodes": 2
+            },
+            "federation": {
+                "host": "pulsar",
+                "port": 6650,
+                "mng_port": 8080,
+                "topic_ttl": 3,
+                "cluster": "standalone",
+                "tenant": "fl-tenant",
+                "route_table": "conf/pulsar_route_table/pulsar_route_table.yaml",
+                "mode": "replication",
+                "max_message_size": 1048576
+            },
+            "storage": {
+                "name_node": "hdfs://namenode:9000",
+                "path_prefix": null
+            }
+        },
+        "federated_mode": "MULTIPLE",
+        "task_parallelism": 1,
+        "computing_partitions": 4,
+        "federated_status_collect_type": "PUSH",
+        "model_id": "arbiter-10000#guest-9999#host-10000#model",
+        "model_version": "202303080155356140690",
+        "auto_retries": 5,
+        "auto_retry_delay": 60,
+        "eggroll_run": {},
+        "spark_run": {
+            "num-executors": 2,
+            "executor-cores": 2
+        },
+        "rabbitmq_run": {},
+        "pulsar_run": {},
+        "adaptation_parameters": {
+            "task_nodes": 2,
+            "task_cores_per_node": 2,
+            "task_memory_per_node": 0,
+            "request_task_cores": 4,
+            "if_initiator_baseline": false
+        }
+    },
+    "local": {
+        "role": "guest",
+        "party_id": 9999
+    },
+    "module": "HomoNN",
+    "CodePath": "HomoNNClient",
+    "ComponentParam": {
+        "trainer": {
+            "trainer_name": "fedavg_trainer",
+            "param": {
+                "epochs": 10,
+                "batch_size": 1024,
+                "data_loader_worker": 8
+            }
+        },
+        "dataset": {
+            "dataset_name": "image",
+            "param": {}
+        },
+        "torch_seed": 100,
+        "nn_define": {
+            "0-0": {
+                "module_name": "resnet",
+                "class_name": "Resnet",
+                "param": {},
+                "layer": "CustModel",
+                "initializer": {}
+            }
+        },
+        "loss": {
+            "weight": null,
+            "size_average": null,
+            "ignore_index": -100,
+            "reduce": null,
+            "reduction": "mean",
+            "label_smoothing": 0.0,
+            "loss_fn": "CrossEntropyLoss"
+        },
+        "optimizer": {
+            "lr": 0.001,
+            "betas": [
+                0.9,
+                0.999
+            ],
+            "eps": 1e-08,
+            "weight_decay": 0.001,
+            "amsgrad": false,
+            "optimizer": "Adam",
+            "config_type": "pytorch"
+        },
+        "_name": "HomoNN#nn_0",
+        "_feeded_deprecated_params": [],
+        "_user_feeded_params": [
+            "dataset.param",
+            "loss",
+            "optimizer",
+            "dataset",
+            "nn_define",
+            "dataset.dataset_name",
+            "trainer.trainer_name",
+            "torch_seed",
+            "trainer",
+            "trainer.param"
+        ],
+        "_is_raw_conf": false
+    },
+    "ComponentParameterSource": "nn_0"
+}
+[INFO] [2023-03-08 01:55:57,232] [202303080155356140690] [960258:140612159231808] - [task_executor._run_] [line:159]: task input dsl {'data': {'train_data': ['reader_0.data'], 'validate_data': ['reader_1.data']}}
+[INFO] [2023-03-08 01:55:57,232] [202303080155356140690] [960258:140612159231808] - [tracker_client.get_output_data_info] [line:258]: Request read job 202303080155356140690 task 202303080155356140690_nn_0 0 on guest 9999 data data info
+[INFO] [2023-03-08 01:55:57,240] [202303080155356140690] [960258:140612159231808] - [task_executor.get_task_run_args] [line:367]: load computing table use 4
+[INFO] [2023-03-08 01:55:57,240] [202303080155356140690] [960258:140612159231808] - [tracker_client.get_output_data_info] [line:258]: Request read job 202303080155356140690 task 202303080155356140690_nn_0 0 on guest 9999 data data info
+[INFO] [2023-03-08 01:55:57,248] [202303080155356140690] [960258:140612159231808] - [task_executor.get_task_run_args] [line:367]: load computing table use 4
+[INFO] [2023-03-08 01:55:57,248] [202303080155356140690] [960258:140612159231808] - [task_executor._run_] [line:208]: profile logging is disabled
+[DEBUG] [2023-03-08 01:55:57,249] [202303080155356140690] [960258:140612159231808] - [component_properties.parse_component_param] [line:93]: need_run: True, need_cv: False
+[DEBUG] [2023-03-08 01:55:57,249] [202303080155356140690] [960258:140612159231808] - [component_properties.parse_dsl_args] [line:114]: parse_dsl_args data_sets: {'reader_0': {'train_data': [<fate_arch.computing.non_distributed.LocalData object at 0x7fe2525b4460>]}, 'reader_1': {'validate_data': [<fate_arch.computing.non_distributed.LocalData object at 0x7fe252392880>]}}
+[DEBUG] [2023-03-08 01:55:57,249] [202303080155356140690] [960258:140612159231808] - [component_properties.parse_dsl_args] [line:124]: [Data Parser], has_train_data: True
+[DEBUG] [2023-03-08 01:55:57,249] [202303080155356140690] [960258:140612159231808] - [component_properties.parse_dsl_args] [line:124]: [Data Parser], has_eval_data: False
+[DEBUG] [2023-03-08 01:55:57,249] [202303080155356140690] [960258:140612159231808] - [component_properties.parse_dsl_args] [line:124]: [Data Parser], has_validate_data: False
+[DEBUG] [2023-03-08 01:55:57,249] [202303080155356140690] [960258:140612159231808] - [component_properties.parse_dsl_args] [line:124]: [Data Parser], has_test_data: False
+[DEBUG] [2023-03-08 01:55:57,249] [202303080155356140690] [960258:140612159231808] - [component_properties.parse_dsl_args] [line:124]: [Data Parser], has_train_data: True
+[DEBUG] [2023-03-08 01:55:57,249] [202303080155356140690] [960258:140612159231808] - [component_properties.parse_dsl_args] [line:124]: [Data Parser], has_eval_data: False
+[DEBUG] [2023-03-08 01:55:57,249] [202303080155356140690] [960258:140612159231808] - [component_properties.parse_dsl_args] [line:124]: [Data Parser], has_validate_data: True
+[DEBUG] [2023-03-08 01:55:57,249] [202303080155356140690] [960258:140612159231808] - [component_properties.parse_dsl_args] [line:124]: [Data Parser], has_test_data: False
+[DEBUG] [2023-03-08 01:55:57,249] [202303080155356140690] [960258:140612159231808] - [component_properties.parse_dsl_args] [line:132]: [Data Parser], has_normal_data: False
+[DEBUG] [2023-03-08 01:55:57,249] [202303080155356140690] [960258:140612159231808] - [component_properties.extract_input_data] [line:200]: Input data_sets: {'reader_0': {'train_data': [<fate_arch.computing.non_distributed.LocalData object at 0x7fe2525b4460>]}, 'reader_1': {'validate_data': [<fate_arch.computing.non_distributed.LocalData object at 0x7fe252392880>]}}
+[DEBUG] [2023-03-08 01:55:57,249] [202303080155356140690] [960258:140612159231808] - [component_properties.extract_input_data] [line:249]: train_data: <fate_arch.computing.non_distributed.LocalData object at 0x7fe2525b4460>, validate_data: <fate_arch.computing.non_distributed.LocalData object at 0x7fe252392880>, test_data: None, data: {}
+[DEBUG] [2023-03-08 01:55:57,249] [202303080155356140690] [960258:140612159231808] - [model_base._run] [line:305]: running_funcs: [<bound method ModelBase.set_flowid of <federatedml.nn.homo.client.HomoNNClient object at 0x7fe252666790>>, <bound method HomoNNClient.fit of <federatedml.nn.homo.client.HomoNNClient object at 0x7fe252666790>>, <bound method ModelBase.set_flowid of <federatedml.nn.homo.client.HomoNNClient object at 0x7fe252666790>>, <bound method HomoNNClient.predict of <federatedml.nn.homo.client.HomoNNClient object at 0x7fe252666790>>, <bound method ModelBase.set_flowid of <federatedml.nn.homo.client.HomoNNClient object at 0x7fe252666790>>, <bound method HomoNNClient.predict of <federatedml.nn.homo.client.HomoNNClient object at 0x7fe252666790>>, <function ComponentProperties.union_data at 0x7fe2c3b07430>, <function HomoNNClient.set_predict_data_schema at 0x7fe25272dd30>]
+[DEBUG] [2023-03-08 01:55:57,249] [202303080155356140690] [960258:140612159231808] - [client.fit] [line:232]: train input is <fate_arch.computing.non_distributed.LocalData object at 0x7fe2525b4460>
+[INFO] [2023-03-08 01:55:57,250] [202303080155356140690] [960258:140612159231808] - [tracker_client.set_metric_meta_common] [line:103]: Request save job 202303080155356140690 task 202303080155356140690_nn_0 0 on guest 9999 metric train loss meta
+[INFO] [2023-03-08 01:55:57,360] [202303080155356140690] [960258:140612159231808] - [client.init] [line:133]: trainer class is <class 'federatedml.nn.homo.trainer.fedavg_trainer.FedAVGTrainer'>
+[INFO] [2023-03-08 01:55:57,522] [202303080155356140690] [960258:140612159231808] - [client.init] [line:184]: model structure is Resnet(
+  (resnet): ResNet(
+    (conv1): Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
+    (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu): ReLU(inplace=True)
+    (maxpool): MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
+    (layer1): Sequential(
+      (0): BasicBlock(
+        (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (1): BasicBlock(
+        (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (layer2): Sequential(
+      (0): BasicBlock(
+        (conv1): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (downsample): Sequential(
+          (0): Conv2d(64, 128, kernel_size=(1, 1), stride=(2, 2), bias=False)
+          (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (1): BasicBlock(
+        (conv1): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (layer3): Sequential(
+      (0): BasicBlock(
+        (conv1): Conv2d(128, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (downsample): Sequential(
+          (0): Conv2d(128, 256, kernel_size=(1, 1), stride=(2, 2), bias=False)
+          (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (1): BasicBlock(
+        (conv1): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (layer4): Sequential(
+      (0): BasicBlock(
+        (conv1): Conv2d(256, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (downsample): Sequential(
+          (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+          (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (1): BasicBlock(
+        (conv1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (avgpool): AdaptiveAvgPool2d(output_size=(1, 1))
+    (fc): Linear(in_features=512, out_features=1000, bias=True)
+  )
+  (classifier): Linear(in_features=1000, out_features=10, bias=True)
+  (softmax): Softmax(dim=1)
+)
+[DEBUG] [2023-03-08 01:55:57,523] [202303080155356140690] [960258:140612159231808] - [serialization.recover_optimizer_from_dict] [line:100]: define dict is {'lr': 0.001, 'betas': [0.9, 0.999], 'eps': 1e-08, 'weight_decay': 0.001, 'amsgrad': False, 'optimizer': 'Adam', 'config_type': 'pytorch'}
+[INFO] [2023-03-08 01:55:57,523] [202303080155356140690] [960258:140612159231808] - [client.init] [line:194]: optimizer is Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: [0.9, 0.999]
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: False
+    lr: 0.001
+    maximize: False
+    weight_decay: 0.001
+)
+[INFO] [2023-03-08 01:55:57,523] [202303080155356140690] [960258:140612159231808] - [client.init] [line:202]: loss function is CrossEntropyLoss()
+[INFO] [2023-03-08 01:55:57,541] [202303080155356140690] [960258:140612159231808] - [client.fit] [line:272]: train dataset instance is Dataset ImageFolder
+    Number of datapoints: 5000
+    Root location: /data/projects/fate/examples/data/toy_cifar10/train
+    StandardTransform
+Transform: Compose(
+               ToTensor()
+           )
+[DEBUG] [2023-03-08 01:55:57,541] [202303080155356140690] [960258:140612159231808] - [data.load_dataset] [line:29]: use cached dataset, cached id /data/projects/fate/examples/data/toy_cifar10/train
+[INFO] [2023-03-08 01:55:57,541] [202303080155356140690] [960258:140612159231808] - [client.fit] [line:283]: validate dataset instance is Dataset ImageFolder
+    Number of datapoints: 5000
+    Root location: /data/projects/fate/examples/data/toy_cifar10/train
+    StandardTransform
+Transform: Compose(
+               ToTensor()
+           )
+[INFO] [2023-03-08 01:55:57,542] [202303080155356140690] [960258:140612159231808] - [blocks.create_cipher] [line:242]: synchronizing uuid
+[DEBUG] [2023-03-08 01:55:57,542] [202303080155356140690] [960258:140612159231808] - [_federation.get] [line:91]: [[federation.get](name=hash.9df77bd5df7830d18b2d.fedavg__uuid, tag=default, parties=[Party(role=arbiter, party_id=10000)])]start to get
+[DEBUG] [2023-03-08 01:55:57,668] [202303080155356140690] [960258:140612159231808] - [_federation._create_topic_by_replication_mode] [line:398]: successfully create pulsar namespace: 202303080155356140690_nn_0_0
+[DEBUG] [2023-03-08 01:55:57,675] [202303080155356140690] [960258:140612159231808] - [_federation._create_topic_by_replication_mode] [line:416]: 
+[DEBUG] [2023-03-08 01:55:57,675] [202303080155356140690] [960258:140612159231808] - [_federation._create_topic_by_replication_mode] [line:418]: successfully set message ttl to namespace: 202303080155356140690_nn_0_0 about 3 mintues
+[DEBUG] [2023-03-08 01:55:57,769] [202303080155356140690] [960258:140612159231808] - [_mq_channel.consume] [line:112]: receive topic: persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-<dtype>-<dtype>
+[DEBUG] [2023-03-08 01:55:57,770] [202303080155356140690] [960258:140612159231808] - [_federation._receive_obj] [line:494]: [federation._receive_obj] properties: {'app_id': '9999', 'content_type': 'text/plain', 'correlation_id': 'default^<dtype>', 'message_id': 'hash.9df77bd5df7830d18b2d.fedavg__uuid'}
+[DEBUG] [2023-03-08 01:55:57,770] [202303080155356140690] [960258:140612159231808] - [_federation._receive_obj] [line:510]: [federation._receive_obj] cache_key: hash.9df77bd5df7830d18b2d.fedavg__uuid^default^<dtype>^10000^arbiter, wish_cache_key: hash.9df77bd5df7830d18b2d.fedavg__uuid^default^<dtype>^10000^arbiter
+[DEBUG] [2023-03-08 01:55:57,771] [202303080155356140690] [960258:140612159231808] - [_federation.get] [line:107]: [federation.get] _name_dtype_keys: ['arbiter^10000^hash.9df77bd5df7830d18b2d.fedavg__uuid^default^get'], dtype: {'dtype': 'obj'}
+[DEBUG] [2023-03-08 01:55:57,814] [202303080155356140690] [960258:140612159231808] - [_mq_channel.consume] [line:112]: receive topic: persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-hash.9df77bd5df7830d18b2d.fedavg__uuid
+[DEBUG] [2023-03-08 01:55:57,815] [202303080155356140690] [960258:140612159231808] - [_federation._receive_obj] [line:494]: [federation._receive_obj] properties: {'app_id': '9999', 'content_type': 'text/plain', 'correlation_id': 'default', 'message_id': 'hash.9df77bd5df7830d18b2d.fedavg__uuid'}
+[DEBUG] [2023-03-08 01:55:57,815] [202303080155356140690] [960258:140612159231808] - [_federation._receive_obj] [line:510]: [federation._receive_obj] cache_key: hash.9df77bd5df7830d18b2d.fedavg__uuid^default^10000^arbiter, wish_cache_key: hash.9df77bd5df7830d18b2d.fedavg__uuid^default^10000^arbiter
+[DEBUG] [2023-03-08 01:55:57,816] [202303080155356140690] [960258:140612159231808] - [_federation.get] [line:160]: [[federation.get](name=hash.9df77bd5df7830d18b2d.fedavg__uuid, tag=default, parties=[Party(role=arbiter, party_id=10000)])]received obj(1/1), party: Party(role=arbiter, party_id=10000) 
+[DEBUG] [2023-03-08 01:55:57,816] [202303080155356140690] [960258:140612159231808] - [_federation.get] [line:165]: [[federation.get](name=hash.9df77bd5df7830d18b2d.fedavg__uuid, tag=default, parties=[Party(role=arbiter, party_id=10000)])]finish to get
+[INFO] [2023-03-08 01:55:57,816] [202303080155356140690] [960258:140612159231808] - [blocks.create_cipher] [line:244]: got local uuid
+[INFO] [2023-03-08 01:55:57,816] [202303080155356140690] [960258:140612159231808] - [blocks.create_cipher] [line:246]: Diffie-Hellman keys exchanging
+[DEBUG] [2023-03-08 01:55:57,817] [202303080155356140690] [960258:140612159231808] - [_federation.get] [line:91]: [[federation.get](name=hash.07899a730252f12ede87.fedavg__pubkey, tag=default, parties=[Party(role=arbiter, party_id=10000)])]start to get
+[DEBUG] [2023-03-08 01:55:57,822] [202303080155356140690] [960258:140612159231808] - [_mq_channel.consume] [line:112]: receive topic: persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-<dtype>-<dtype>
+[DEBUG] [2023-03-08 01:55:57,921] [202303080155356140690] [960258:140612159231808] - [_federation._receive_obj] [line:494]: [federation._receive_obj] properties: {'app_id': '9999', 'content_type': 'text/plain', 'correlation_id': 'default^<dtype>', 'message_id': 'hash.9df77bd5df7830d18b2d.fedavg__uuid'}
+[WARNING] [2023-03-08 01:55:57,922] [202303080155356140690] [960258:140612159231808] - [_federation._receive_obj] [line:499]: [federation._receive_obj] require hash.07899a730252f12ede87.fedavg__pubkey.default^<dtype>, got hash.9df77bd5df7830d18b2d.fedavg__uuid.default^<dtype>
+[DEBUG] [2023-03-08 01:55:57,922] [202303080155356140690] [960258:140612159231808] - [_federation._receive_obj] [line:510]: [federation._receive_obj] cache_key: hash.9df77bd5df7830d18b2d.fedavg__uuid^default^<dtype>^10000^arbiter, wish_cache_key: hash.07899a730252f12ede87.fedavg__pubkey^default^<dtype>^10000^arbiter
+[DEBUG] [2023-03-08 01:55:57,922] [202303080155356140690] [960258:140612159231808] - [_mq_channel.consume] [line:112]: receive topic: persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-<dtype>-<dtype>
+[DEBUG] [2023-03-08 01:55:57,922] [202303080155356140690] [960258:140612159231808] - [_federation._receive_obj] [line:494]: [federation._receive_obj] properties: {'app_id': '9999', 'content_type': 'text/plain', 'correlation_id': 'default^<dtype>', 'message_id': 'hash.07899a730252f12ede87.fedavg__pubkey'}
+[DEBUG] [2023-03-08 01:55:57,922] [202303080155356140690] [960258:140612159231808] - [_federation._receive_obj] [line:510]: [federation._receive_obj] cache_key: hash.07899a730252f12ede87.fedavg__pubkey^default^<dtype>^10000^arbiter, wish_cache_key: hash.07899a730252f12ede87.fedavg__pubkey^default^<dtype>^10000^arbiter
+[DEBUG] [2023-03-08 01:55:57,923] [202303080155356140690] [960258:140612159231808] - [_federation.get] [line:107]: [federation.get] _name_dtype_keys: ['arbiter^10000^hash.07899a730252f12ede87.fedavg__pubkey^default^get'], dtype: {'dtype': 'obj'}
+[DEBUG] [2023-03-08 01:55:57,955] [202303080155356140690] [960258:140612159231808] - [_mq_channel.consume] [line:112]: receive topic: persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-hash.07899a730252f12ede87.fedavg__pubkey
+[DEBUG] [2023-03-08 01:55:57,956] [202303080155356140690] [960258:140612159231808] - [_federation._receive_obj] [line:494]: [federation._receive_obj] properties: {'app_id': '9999', 'content_type': 'text/plain', 'correlation_id': 'default', 'message_id': 'hash.07899a730252f12ede87.fedavg__pubkey'}
+[DEBUG] [2023-03-08 01:55:57,956] [202303080155356140690] [960258:140612159231808] - [_federation._receive_obj] [line:510]: [federation._receive_obj] cache_key: hash.07899a730252f12ede87.fedavg__pubkey^default^10000^arbiter, wish_cache_key: hash.07899a730252f12ede87.fedavg__pubkey^default^10000^arbiter
+[DEBUG] [2023-03-08 01:55:57,957] [202303080155356140690] [960258:140612159231808] - [_federation.get] [line:160]: [[federation.get](name=hash.07899a730252f12ede87.fedavg__pubkey, tag=default, parties=[Party(role=arbiter, party_id=10000)])]received obj(1/1), party: Party(role=arbiter, party_id=10000) 
+[DEBUG] [2023-03-08 01:55:57,957] [202303080155356140690] [960258:140612159231808] - [_federation.get] [line:165]: [[federation.get](name=hash.07899a730252f12ede87.fedavg__pubkey, tag=default, parties=[Party(role=arbiter, party_id=10000)])]finish to get
+[DEBUG] [2023-03-08 01:55:57,958] [202303080155356140690] [960258:140612159231808] - [_federation.remote] [line:198]: [federation.remote] _name_dtype_keys: ['arbiter^10000^hash.21a065798b393e3a036b.fedavg__p_power_r^default^remote'], dtype: {'dtype': 'obj'}
+[DEBUG] [2023-03-08 01:55:57,958] [202303080155356140690] [960258:140612159231808] - [_federation._send_obj] [line:350]: [federation._send_obj]properties:{'content_type': 'text/plain', 'app_id': '10000', 'message_id': 'hash.21a065798b393e3a036b.fedavg__p_power_r', 'correlation_id': 'default^<dtype>'}.
+[DEBUG] [2023-03-08 01:55:57,985] [202303080155356140690] [960258:140612159231808] - [_mq_channel.produce] [line:97]: send queue: persistent://fl-tenant/202303080155356140690_nn_0_0/guest-9999-arbiter-10000-<dtype>-<dtype>
+[DEBUG] [2023-03-08 01:55:57,985] [202303080155356140690] [960258:140612159231808] - [_mq_channel.produce] [line:98]: send data size: 29
+[DEBUG] [2023-03-08 01:55:57,987] [202303080155356140690] [960258:140612159231808] - [_federation.remote] [line:237]: [[federation.remote](name=hash.21a065798b393e3a036b.fedavg__p_power_r, tag=default, parties=[Party(role=arbiter, party_id=10000)])]start to remote obj
+[DEBUG] [2023-03-08 01:55:57,998] [202303080155356140690] [960258:140612159231808] - [_federation._send_obj] [line:350]: [federation._send_obj]properties:{'content_type': 'text/plain', 'app_id': '10000', 'message_id': 'hash.21a065798b393e3a036b.fedavg__p_power_r', 'correlation_id': 'default'}.
+[DEBUG] [2023-03-08 01:55:58,054] [202303080155356140690] [960258:140612159231808] - [_mq_channel.produce] [line:97]: send queue: persistent://fl-tenant/202303080155356140690_nn_0_0/guest-9999-arbiter-10000-hash.21a065798b393e3a036b.fedavg__p_power_r
+[DEBUG] [2023-03-08 01:55:58,054] [202303080155356140690] [960258:140612159231808] - [_mq_channel.produce] [line:98]: send data size: 210
+[DEBUG] [2023-03-08 01:55:58,055] [202303080155356140690] [960258:140612159231808] - [_federation.remote] [line:244]: [[federation.remote](name=hash.21a065798b393e3a036b.fedavg__p_power_r, tag=default, parties=[Party(role=arbiter, party_id=10000)])]finish to remote
+[DEBUG] [2023-03-08 01:55:58,056] [202303080155356140690] [960258:140612159231808] - [_federation.get] [line:91]: [[federation.get](name=hash.2cce3f65445e2c0c7469.fedavg__p_power_r_bc, tag=default, parties=[Party(role=arbiter, party_id=10000)])]start to get
+[DEBUG] [2023-03-08 01:55:58,064] [202303080155356140690] [960258:140612159231808] - [_mq_channel.consume] [line:112]: receive topic: persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-<dtype>-<dtype>
+[DEBUG] [2023-03-08 01:55:58,163] [202303080155356140690] [960258:140612159231808] - [_federation._receive_obj] [line:494]: [federation._receive_obj] properties: {'app_id': '9999', 'content_type': 'text/plain', 'correlation_id': 'default^<dtype>', 'message_id': 'hash.07899a730252f12ede87.fedavg__pubkey'}
+[WARNING] [2023-03-08 01:55:58,164] [202303080155356140690] [960258:140612159231808] - [_federation._receive_obj] [line:499]: [federation._receive_obj] require hash.2cce3f65445e2c0c7469.fedavg__p_power_r_bc.default^<dtype>, got hash.07899a730252f12ede87.fedavg__pubkey.default^<dtype>
+[DEBUG] [2023-03-08 01:55:58,164] [202303080155356140690] [960258:140612159231808] - [_federation._receive_obj] [line:510]: [federation._receive_obj] cache_key: hash.07899a730252f12ede87.fedavg__pubkey^default^<dtype>^10000^arbiter, wish_cache_key: hash.2cce3f65445e2c0c7469.fedavg__p_power_r_bc^default^<dtype>^10000^arbiter
+[DEBUG] [2023-03-08 01:55:58,164] [202303080155356140690] [960258:140612159231808] - [_mq_channel.consume] [line:112]: receive topic: persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-<dtype>-<dtype>
+[DEBUG] [2023-03-08 01:55:58,207] [202303080155356140690] [960258:140612159231808] - [_federation._receive_obj] [line:494]: [federation._receive_obj] properties: {'app_id': '9999', 'content_type': 'text/plain', 'correlation_id': 'default^<dtype>', 'message_id': 'hash.2cce3f65445e2c0c7469.fedavg__p_power_r_bc'}
+[DEBUG] [2023-03-08 01:55:58,207] [202303080155356140690] [960258:140612159231808] - [_federation._receive_obj] [line:510]: [federation._receive_obj] cache_key: hash.2cce3f65445e2c0c7469.fedavg__p_power_r_bc^default^<dtype>^10000^arbiter, wish_cache_key: hash.2cce3f65445e2c0c7469.fedavg__p_power_r_bc^default^<dtype>^10000^arbiter
+[DEBUG] [2023-03-08 01:55:58,209] [202303080155356140690] [960258:140612159231808] - [_federation.get] [line:107]: [federation.get] _name_dtype_keys: ['arbiter^10000^hash.2cce3f65445e2c0c7469.fedavg__p_power_r_bc^default^get'], dtype: {'dtype': 'obj'}
+[DEBUG] [2023-03-08 01:55:58,284] [202303080155356140690] [960258:140612159231808] - [_mq_channel.consume] [line:112]: receive topic: persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-hash.2cce3f65445e2c0c7469.fedavg__p_power_r_bc
+[DEBUG] [2023-03-08 01:55:58,285] [202303080155356140690] [960258:140612159231808] - [_federation._receive_obj] [line:494]: [federation._receive_obj] properties: {'app_id': '9999', 'content_type': 'text/plain', 'correlation_id': 'default', 'message_id': 'hash.2cce3f65445e2c0c7469.fedavg__p_power_r_bc'}
+[DEBUG] [2023-03-08 01:55:58,285] [202303080155356140690] [960258:140612159231808] - [_federation._receive_obj] [line:510]: [federation._receive_obj] cache_key: hash.2cce3f65445e2c0c7469.fedavg__p_power_r_bc^default^10000^arbiter, wish_cache_key: hash.2cce3f65445e2c0c7469.fedavg__p_power_r_bc^default^10000^arbiter
+[DEBUG] [2023-03-08 01:55:58,286] [202303080155356140690] [960258:140612159231808] - [_federation.get] [line:160]: [[federation.get](name=hash.2cce3f65445e2c0c7469.fedavg__p_power_r_bc, tag=default, parties=[Party(role=arbiter, party_id=10000)])]received obj(1/1), party: Party(role=arbiter, party_id=10000) 
+[DEBUG] [2023-03-08 01:55:58,286] [202303080155356140690] [960258:140612159231808] - [_federation.get] [line:165]: [[federation.get](name=hash.2cce3f65445e2c0c7469.fedavg__p_power_r_bc, tag=default, parties=[Party(role=arbiter, party_id=10000)])]finish to get
+[INFO] [2023-03-08 01:55:58,287] [202303080155356140690] [960258:140612159231808] - [blocks.create_cipher] [line:248]: got Diffie-Hellman exchanged keys
+[INFO] [2023-03-08 01:55:58,287] [202303080155356140690] [960258:140612159231808] - [secure_aggregator.__init__] [line:35]: initialize secure aggregator done
+[DEBUG] [2023-03-08 01:55:58,288] [202303080155356140690] [960258:140612159231808] - [_federation.remote] [line:198]: [federation.remote] _name_dtype_keys: ['arbiter^10000^hash.17b7fca829cbe7ec6f14.fedavg_client_to_server^default.agg_weight^remote'], dtype: {'dtype': 'obj'}
+[DEBUG] [2023-03-08 01:55:58,288] [202303080155356140690] [960258:140612159231808] - [_federation._send_obj] [line:350]: [federation._send_obj]properties:{'content_type': 'text/plain', 'app_id': '10000', 'message_id': 'hash.17b7fca829cbe7ec6f14.fedavg_client_to_server', 'correlation_id': 'default.agg_weight^<dtype>'}.
+[DEBUG] [2023-03-08 01:55:58,290] [202303080155356140690] [960258:140612159231808] - [_mq_channel.produce] [line:97]: send queue: persistent://fl-tenant/202303080155356140690_nn_0_0/guest-9999-arbiter-10000-<dtype>-<dtype>
+[DEBUG] [2023-03-08 01:55:58,290] [202303080155356140690] [960258:140612159231808] - [_mq_channel.produce] [line:98]: send data size: 29
+[DEBUG] [2023-03-08 01:55:58,292] [202303080155356140690] [960258:140612159231808] - [_federation.remote] [line:237]: [[federation.remote](name=hash.17b7fca829cbe7ec6f14.fedavg_client_to_server, tag=default.agg_weight, parties=[Party(role=arbiter, party_id=10000)])]start to remote obj
+[DEBUG] [2023-03-08 01:55:58,304] [202303080155356140690] [960258:140612159231808] - [_federation._send_obj] [line:350]: [federation._send_obj]properties:{'content_type': 'text/plain', 'app_id': '10000', 'message_id': 'hash.17b7fca829cbe7ec6f14.fedavg_client_to_server', 'correlation_id': 'default.agg_weight'}.
+[DEBUG] [2023-03-08 01:55:58,358] [202303080155356140690] [960258:140612159231808] - [_mq_channel.produce] [line:97]: send queue: persistent://fl-tenant/202303080155356140690_nn_0_0/guest-9999-arbiter-10000-hash.17b7fca829cbe7ec6f14.fedavg_client_to_server
+[DEBUG] [2023-03-08 01:55:58,358] [202303080155356140690] [960258:140612159231808] - [_mq_channel.produce] [line:98]: send data size: 15
+[DEBUG] [2023-03-08 01:55:58,360] [202303080155356140690] [960258:140612159231808] - [_federation.remote] [line:244]: [[federation.remote](name=hash.17b7fca829cbe7ec6f14.fedavg_client_to_server, tag=default.agg_weight, parties=[Party(role=arbiter, party_id=10000)])]finish to remote
+[DEBUG] [2023-03-08 01:55:58,360] [202303080155356140690] [960258:140612159231808] - [_federation.get] [line:91]: [[federation.get](name=hash.7a6ac6ae11f0f65053b4.fedavg_server_to_client, tag=default.agg_weight, parties=[Party(role=arbiter, party_id=10000)])]start to get
+[DEBUG] [2023-03-08 01:55:58,365] [202303080155356140690] [960258:140612159231808] - [_mq_channel.consume] [line:112]: receive topic: persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-<dtype>-<dtype>
+[DEBUG] [2023-03-08 01:55:58,465] [202303080155356140690] [960258:140612159231808] - [_federation._receive_obj] [line:494]: [federation._receive_obj] properties: {'app_id': '9999', 'content_type': 'text/plain', 'correlation_id': 'default^<dtype>', 'message_id': 'hash.2cce3f65445e2c0c7469.fedavg__p_power_r_bc'}
+[WARNING] [2023-03-08 01:55:58,465] [202303080155356140690] [960258:140612159231808] - [_federation._receive_obj] [line:499]: [federation._receive_obj] require hash.7a6ac6ae11f0f65053b4.fedavg_server_to_client.default.agg_weight^<dtype>, got hash.2cce3f65445e2c0c7469.fedavg__p_power_r_bc.default^<dtype>
+[DEBUG] [2023-03-08 01:55:58,465] [202303080155356140690] [960258:140612159231808] - [_federation._receive_obj] [line:510]: [federation._receive_obj] cache_key: hash.2cce3f65445e2c0c7469.fedavg__p_power_r_bc^default^<dtype>^10000^arbiter, wish_cache_key: hash.7a6ac6ae11f0f65053b4.fedavg_server_to_client^default.agg_weight^<dtype>^10000^arbiter
+[DEBUG] [2023-03-08 01:55:58,465] [202303080155356140690] [960258:140612159231808] - [_mq_channel.consume] [line:112]: receive topic: persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-<dtype>-<dtype>
+[DEBUG] [2023-03-08 01:55:58,561] [202303080155356140690] [960258:140612159231808] - [_federation._receive_obj] [line:494]: [federation._receive_obj] properties: {'app_id': '9999', 'content_type': 'text/plain', 'correlation_id': 'default.agg_weight^<dtype>', 'message_id': 'hash.7a6ac6ae11f0f65053b4.fedavg_server_to_client'}
+[DEBUG] [2023-03-08 01:55:58,562] [202303080155356140690] [960258:140612159231808] - [_federation._receive_obj] [line:510]: [federation._receive_obj] cache_key: hash.7a6ac6ae11f0f65053b4.fedavg_server_to_client^default.agg_weight^<dtype>^10000^arbiter, wish_cache_key: hash.7a6ac6ae11f0f65053b4.fedavg_server_to_client^default.agg_weight^<dtype>^10000^arbiter
+[DEBUG] [2023-03-08 01:55:58,563] [202303080155356140690] [960258:140612159231808] - [_federation.get] [line:107]: [federation.get] _name_dtype_keys: ['arbiter^10000^hash.7a6ac6ae11f0f65053b4.fedavg_server_to_client^default.agg_weight^get'], dtype: {'dtype': 'obj'}
+[DEBUG] [2023-03-08 01:55:58,639] [202303080155356140690] [960258:140612159231808] - [_mq_channel.consume] [line:112]: receive topic: persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-hash.7a6ac6ae11f0f65053b4.fedavg_server_to_client
+[DEBUG] [2023-03-08 01:55:58,641] [202303080155356140690] [960258:140612159231808] - [_federation._receive_obj] [line:494]: [federation._receive_obj] properties: {'app_id': '9999', 'content_type': 'text/plain', 'correlation_id': 'default.agg_weight', 'message_id': 'hash.7a6ac6ae11f0f65053b4.fedavg_server_to_client'}
+[DEBUG] [2023-03-08 01:55:58,641] [202303080155356140690] [960258:140612159231808] - [_federation._receive_obj] [line:510]: [federation._receive_obj] cache_key: hash.7a6ac6ae11f0f65053b4.fedavg_server_to_client^default.agg_weight^10000^arbiter, wish_cache_key: hash.7a6ac6ae11f0f65053b4.fedavg_server_to_client^default.agg_weight^10000^arbiter
+[DEBUG] [2023-03-08 01:55:58,643] [202303080155356140690] [960258:140612159231808] - [_federation.get] [line:160]: [[federation.get](name=hash.7a6ac6ae11f0f65053b4.fedavg_server_to_client, tag=default.agg_weight, parties=[Party(role=arbiter, party_id=10000)])]received obj(1/1), party: Party(role=arbiter, party_id=10000) 
+[DEBUG] [2023-03-08 01:55:58,643] [202303080155356140690] [960258:140612159231808] - [_federation.get] [line:165]: [[federation.get](name=hash.7a6ac6ae11f0f65053b4.fedavg_server_to_client, tag=default.agg_weight, parties=[Party(role=arbiter, party_id=10000)])]finish to get
+[DEBUG] [2023-03-08 01:55:58,643] [202303080155356140690] [960258:140612159231808] - [secure_aggregator.__init__] [line:54]: aggregate compute weight is 0.5
+[INFO] [2023-03-08 01:55:58,644] [202303080155356140690] [960258:140612159231808] - [fedavg_trainer.train] [line:173]: epoch is 0
+[DEBUG] [2023-03-08 01:56:04,438] [202303080155356140690] [960258:140612159231808] - [fedavg_trainer.train] [line:205]: epoch 0 batch 1 finished
+[DEBUG] [2023-03-08 01:56:06,428] [202303080155356140690] [960258:140612159231808] - [fedavg_trainer.train] [line:205]: epoch 0 batch 2 finished
+[DEBUG] [2023-03-08 01:56:07,619] [202303080155356140690] [960258:140612159231808] - [fedavg_trainer.train] [line:205]: epoch 0 batch 3 finished
+[DEBUG] [2023-03-08 01:56:08,642] [202303080155356140690] [960258:140612159231808] - [fedavg_trainer.train] [line:205]: epoch 0 batch 4 finished
+[DEBUG] [2023-03-08 01:56:09,334] [202303080155356140690] [960258:140612159231808] - [fedavg_trainer.train] [line:205]: epoch 0 batch 5 finished
+[INFO] [2023-03-08 01:56:09,356] [202303080155356140690] [960258:140612159231808] - [tracker_client.log_metric_data_common] [line:69]: Request save job 202303080155356140690 task 202303080155356140690_nn_0 0 on guest 9999 metric train loss data
+[INFO] [2023-03-08 01:56:09,366] [202303080155356140690] [960258:140612159231808] - [fedavg_trainer.train] [line:213]: epoch loss is 2.551649267578125
+[DEBUG] [2023-03-08 01:56:42,014] [202303080155356140690] [960258:140612159231808] - [_federation.remote] [line:198]: [federation.remote] _name_dtype_keys: ['arbiter^10000^hash.17b7fca829cbe7ec6f14.fedavg_client_to_server^default.local_model_0^remote'], dtype: {'dtype': 'split_obj', 'partitions': 1}
+[DEBUG] [2023-03-08 01:56:42,014] [202303080155356140690] [960258:140612159231808] - [_federation._send_obj] [line:350]: [federation._send_obj]properties:{'content_type': 'text/plain', 'app_id': '10000', 'message_id': 'hash.17b7fca829cbe7ec6f14.fedavg_client_to_server', 'correlation_id': 'default.local_model_0^<dtype>'}.
+[DEBUG] [2023-03-08 01:56:42,018] [202303080155356140690] [960258:140612159231808] - [_mq_channel.produce] [line:97]: send queue: persistent://fl-tenant/202303080155356140690_nn_0_0/guest-9999-arbiter-10000-<dtype>-<dtype>
+[DEBUG] [2023-03-08 01:56:42,018] [202303080155356140690] [960258:140612159231808] - [_mq_channel.produce] [line:98]: send data size: 51
+[DEBUG] [2023-03-08 01:56:42,665] [202303080155356140690] [960258:140612159231808] - [_federation.remote] [line:215]: [[federation.remote](name=hash.17b7fca829cbe7ec6f14.fedavg_client_to_server, tag=default.local_model_0, parties=[Party(role=arbiter, party_id=10000)])]start to remote table, total_size=45, partitions=1
+[DEBUG] [2023-03-08 01:56:45,162] [202303080155356140690] [960258:140612159231808] - [_federation.remote] [line:244]: [[federation.remote](name=hash.17b7fca829cbe7ec6f14.fedavg_client_to_server, tag=default.local_model_0, parties=[Party(role=arbiter, party_id=10000)])]finish to remote
+[DEBUG] [2023-03-08 01:56:45,162] [202303080155356140690] [960258:140612159231808] - [_federation.get] [line:91]: [[federation.get](name=hash.7a6ac6ae11f0f65053b4.fedavg_server_to_client, tag=default.agg_model_0, parties=[Party(role=arbiter, party_id=10000)])]start to get
+[DEBUG] [2023-03-08 01:56:45,171] [202303080155356140690] [960258:140612159231808] - [_mq_channel.consume] [line:112]: receive topic: persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-<dtype>-<dtype>
+[DEBUG] [2023-03-08 01:56:45,270] [202303080155356140690] [960258:140612159231808] - [_federation._receive_obj] [line:494]: [federation._receive_obj] properties: {'app_id': '9999', 'content_type': 'text/plain', 'correlation_id': 'default.agg_weight^<dtype>', 'message_id': 'hash.7a6ac6ae11f0f65053b4.fedavg_server_to_client'}
+[WARNING] [2023-03-08 01:56:45,271] [202303080155356140690] [960258:140612159231808] - [_federation._receive_obj] [line:499]: [federation._receive_obj] require hash.7a6ac6ae11f0f65053b4.fedavg_server_to_client.default.agg_model_0^<dtype>, got hash.7a6ac6ae11f0f65053b4.fedavg_server_to_client.default.agg_weight^<dtype>
+[DEBUG] [2023-03-08 01:56:45,271] [202303080155356140690] [960258:140612159231808] - [_federation._receive_obj] [line:510]: [federation._receive_obj] cache_key: hash.7a6ac6ae11f0f65053b4.fedavg_server_to_client^default.agg_weight^<dtype>^10000^arbiter, wish_cache_key: hash.7a6ac6ae11f0f65053b4.fedavg_server_to_client^default.agg_model_0^<dtype>^10000^arbiter
+[DEBUG] [2023-03-08 01:56:45,271] [202303080155356140690] [960258:140612159231808] - [_mq_channel.consume] [line:112]: receive topic: persistent://fl-tenant/202303080155356140690_nn_0_0/arbiter-10000-guest-9999-<dtype>-<dtype>

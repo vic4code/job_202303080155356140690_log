@@ -1,0 +1,14 @@
+[WARNING] [2023-03-08 01:55:52,690] [202303080155356140690] [960258:140612159231808] - [job_default_config.load] [line:61]: job default config not supported upload_max_bytes
+[INFO] [2023-03-08 01:55:52,978] [202303080155356140690] [960258:140612159231808] - [resource_manager.register_engine] [line:64]: update federation engine STANDALONE fate_on_standalone registration information
+[INFO] [2023-03-08 01:55:52,984] [202303080155356140690] [960258:140612159231808] - [resource_manager.register_engine] [line:64]: update federation engine EGGROLL fate_on_eggroll registration information
+[INFO] [2023-03-08 01:55:52,990] [202303080155356140690] [960258:140612159231808] - [resource_manager.register_engine] [line:64]: update federation engine RABBITMQ fate_on_spark registration information
+[INFO] [2023-03-08 01:55:52,996] [202303080155356140690] [960258:140612159231808] - [resource_manager.register_engine] [line:64]: update federation engine PULSAR fate_on_spark registration information
+[INFO] [2023-03-08 01:55:53,001] [202303080155356140690] [960258:140612159231808] - [resource_manager.register_engine] [line:64]: update computing engine STANDALONE fate_on_standalone registration information
+[INFO] [2023-03-08 01:55:53,008] [202303080155356140690] [960258:140612159231808] - [resource_manager.register_engine] [line:64]: update computing engine EGGROLL fate_on_eggroll registration information
+[INFO] [2023-03-08 01:55:53,013] [202303080155356140690] [960258:140612159231808] - [resource_manager.register_engine] [line:64]: update computing engine SPARK fate_on_spark registration information
+[INFO] [2023-03-08 01:55:53,018] [202303080155356140690] [960258:140612159231808] - [resource_manager.register_engine] [line:64]: update computing engine LINKIS_SPARK fate_on_spark registration information
+[INFO] [2023-03-08 01:55:53,023] [202303080155356140690] [960258:140612159231808] - [resource_manager.register_engine] [line:64]: update storage engine STANDALONE fate_on_standalone registration information
+[INFO] [2023-03-08 01:55:53,030] [202303080155356140690] [960258:140612159231808] - [resource_manager.register_engine] [line:64]: update storage engine EGGROLL fate_on_eggroll registration information
+[INFO] [2023-03-08 01:55:53,035] [202303080155356140690] [960258:140612159231808] - [resource_manager.register_engine] [line:64]: update storage engine HDFS fate_on_spark registration information
+[INFO] [2023-03-08 01:55:53,040] [202303080155356140690] [960258:140612159231808] - [resource_manager.register_engine] [line:64]: update storage engine HIVE fate_on_spark registration information
+[INFO] [2023-03-08 01:55:53,045] [202303080155356140690] [960258:140612159231808] - [resource_manager.register_engine] [line:64]: update storage engine LINKIS_HIVE fate_on_spark registration information
